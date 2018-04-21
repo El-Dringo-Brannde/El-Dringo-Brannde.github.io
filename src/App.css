@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -12,6 +14,44 @@
   height: 150px;
   padding: 20px;
   color: white;
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 25px;
+   background-color: #f5f5f5;
+}
+
+
+.font-size-10{
+   font-weight: 900;
+   color: black;
+}
+
+.full-screen-height{
+   height: 100vh;
+}
+
+.center-text{
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.header-image{
+   height: 100vh;
+   position: relative;
+   width: '100%';
+   background: url('https://i.imgur.com/KVg0kyA.jpg');
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.9;
+}
+.margin-25{
+   margin: 100px;
 }
 
 .App-title {
