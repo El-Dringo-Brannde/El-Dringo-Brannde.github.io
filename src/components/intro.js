@@ -1,7 +1,4 @@
 import React from 'react';
-import * as $ from 'jquery';
-import * as animatedHeadline from 'jquery-animated-headlines'
-
 
 const Intro = () => {
    return (
