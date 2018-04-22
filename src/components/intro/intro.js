@@ -9,8 +9,9 @@ const settings = {
    arrows: false,
    infinite: true,
    autoplay: true,
-   autoplaySpeed: 5000,
+   autoplaySpeed: 8000,
    speed: 2000,
+   pauseOnHover: false
 }
 
 
@@ -37,7 +38,6 @@ const Intro = () => {
                </span>
             </div>
          </div>
-
          <Slider {...settings} className='full-screen hide-overflow-y'>
             {/* Slide 1 */}
             <img src='https://i.imgur.com/KVg0kyA.jpg' className='full-screen hide-overflow-y' />
@@ -45,30 +45,7 @@ const Intro = () => {
             <img src='https://i.imgur.com/b2zJh4o.jpg' className='full-screen hide-overflow-y' />
             {/* Slide 3*/}
             <img src='https://i.imgur.com/RPx8g53.jpg' className='full-screen hide-overflow-y' />
-
          </Slider>
-         {/* <div className='center-text header-image'>
-            <div className='margin-25 thick-characters'>
-               <section>
-                  <div className="cd-headline letters type">
-                     <span>Hi, I'm Brandon. </span>
-                     <br />
-                     <span>Professional Coder. Amateur Beer, & Coffee Drinker</span>
-                     <br />
-                     <span>I design & build </span>
-                     <span className="cd-words-wrapper waiting">
-                        <b className="is-visible">Full Stack Websites. &nbsp;</b>
-                        <b>Mobile apps. &nbsp;</b>
-                        <b>Angular Apps. &nbsp;</b>
-                        <b>Electron Apps. &nbsp;</b>
-                        <b>Node.JS Servers. &nbsp;</b>
-                        <b>Python Automation Scripts. &nbsp;</b>
-                     </span>
-                  </div>
-               </section>
-            </div>
-
-         </div> */}
       </SkewedContainer>
    );
 }
