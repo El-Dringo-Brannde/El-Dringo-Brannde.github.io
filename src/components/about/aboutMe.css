@@ -1,0 +1,16 @@
+.about-me-card{
+   display: 'flex';
+
+}
+
+.card-image{
+   height: 50;
+   width: 100;
+}
+
+.rating{
+  color: black;
+  border:1px solid;
+  height:5px;
+  width: 30px;
+}

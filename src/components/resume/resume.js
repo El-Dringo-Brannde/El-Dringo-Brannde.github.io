@@ -8,7 +8,7 @@ const Resume = () => {
          top='right'
          bottom="right"
          bgColor="white"
-         className='full-screen'
+         // className='variable-full-screen'
          noMargin>
          <Grid container justify='center'>
             <h1 className='text-center'>About Me</h1>

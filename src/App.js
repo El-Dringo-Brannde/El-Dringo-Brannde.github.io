@@ -22,7 +22,7 @@ class App extends Component {
                <Resume></Resume>
             </Parallax>
             <Parallax>
-               <Foot></Foot>
+               {/* <Foot></Foot> */}
             </Parallax>
          </ParallaxProvider>
 
