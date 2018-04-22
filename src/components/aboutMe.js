@@ -1,14 +1,17 @@
 import React from 'react';
+import SkewedContainer from 'sc-react';
+
 
 const AboutMe = () => {
    return (
-      <div className='row'>
-         <h1>About Me</h1>
-         <div className='row'>
-            <div className='col-6'>
-            </div>
-         </div>
-      </div>
+      <SkewedContainer
+         top='right'
+         bottom="left"
+         bgColor="#34495e"
+         className='full-screen'
+         noMargin>
+         <h1 style={{ textAlign: "center" }}>Hello World!</h1>
+      </SkewedContainer>
    )
 }
 
