@@ -1,15 +1,14 @@
 import React from 'react';
-import { Container, Footer } from 'mdbreact';
 
 const Foot = () => {
    return (
-      <Footer color="blue" >
+      <footer color="blue" >
          <div className="text-center">
-            <Container fluid>
+            <div className='container-fluid'>
                Made with ❤️  by El-Dringo-Brannde
-            </Container>
+            </div>
          </div>
-      </Footer>
+      </footer>
    );
 }
 

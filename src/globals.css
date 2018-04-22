@@ -14,6 +14,14 @@
   color: white;
 }
 
+.hide-overflow-y{
+   overflow-y: hidden;
+}
+
+.overlay-div{
+   z-index: 5;
+   position: absolute;
+}
 
 footer {
    position: absolute;
@@ -26,7 +34,12 @@ footer {
 
 .full-screen{
    height: 100vh;
-   width: 100vw;
+   max-width: 100%;
+   width: 100%;
+}
+
+.hide-overflow-x{
+   overflow-x: hidden;
 }
 
 .thick-characters{
@@ -38,20 +51,10 @@ footer {
 .margin-auto{
    margin: auto;
 }
-.center-text{
+.center-text {
    display: flex;
    justify-content: center;
    align-items: flex-start;
-}
-
-.header-image{
-   height: 100vh;
-   position: relative;
-   width: '100%';
-   background: url('https://i.imgur.com/KVg0kyA.jpg');
-   background-position: 100% 100%;
-   background-size: cover;
-   opacity: 0.9;
 }
 
 .margin-25{
