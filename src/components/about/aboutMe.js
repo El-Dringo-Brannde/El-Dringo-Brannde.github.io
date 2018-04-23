@@ -3,6 +3,7 @@ import SkewedContainer from 'sc-react';
 import Card, { CardMedia, CardContent } from 'material-ui/Card';
 import Grid from 'material-ui/Grid';
 import SkillRating from './../../reusables/rating'
+import Skills from './skills';
 
 
 const AboutMe = () => {
@@ -24,22 +25,17 @@ const AboutMe = () => {
                </Card>
             </Grid>
             <Grid item lg={3} style={{ padding: 20, margin: 20 }}>
-               <h2>Skills</h2>
-               <SkillRating
-                  skill='Node.JS'
-                  rating={4} />
-               <SkillRating
-                  skill='Web Dev (HTML, SCSS, React, Angular(s))'
-                  rating={4} />
-               <SkillRating
-                  skill='Desktop Apps (ElectronJS & Node.JS)'
-                  rating={3.5} />
-               <SkillRating
-                  skill='Python (Flask, Django, Bottle, SciPy, Numpy)'
-                  rating={3.5} />
-               <SkillRating
-                  skill='Mobile Apps (Cordova, Ionic, & React Native)'
-                  rating={3} />
+               <h2 style={{ marginTop: 0 }}>Skills</h2>
+
+               {Skills.map(skill => {
+                  return (
+                     <SkillRating
+                        key={skill.name}
+                        skill={skill.name}
+                        rating={skill.rating} />
+                  )
+               })}
+
             </Grid>
             <Grid item lg={4} style={{ padding: 20, margin: 20 }}>
                <Card raised>
@@ -65,12 +61,11 @@ const AboutMe = () => {
                            </p>
                      <h3>
                         Social
-                           </h3>
+                     </h3>
                   </CardContent>
                </Card>
             </Grid>
          </Grid>
-
       </SkewedContainer>
    )
 }

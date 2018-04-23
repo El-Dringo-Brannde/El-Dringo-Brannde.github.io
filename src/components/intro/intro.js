@@ -18,7 +18,6 @@ const settings = {
 const Intro = () => {
    return (
       <SkewedContainer
-         className='full-screen'
          bottom='right'
          noMargin>
          <div className=' margin-25 center-text overlay-div thick-characters hack-headline'>
@@ -38,13 +37,13 @@ const Intro = () => {
                </span>
             </div>
          </div>
-         <Slider {...settings} className='full-screen hide-overflow-y'>
+         <Slider {...settings} className='intro-image hide-overflow-y'>
             {/* Slide 1 */}
-            <img src='https://i.imgur.com/KVg0kyA.jpg' className='full-screen hide-overflow-y' />
+            <img src='https://i.imgur.com/KVg0kyA.jpg' className='intro-image hide-overflow-y' />
             {/* Slide 2 */}
-            <img src='https://i.imgur.com/b2zJh4o.jpg' className='full-screen hide-overflow-y' />
+            <img src='https://i.imgur.com/b2zJh4o.jpg' className='intro-image hide-overflow-y' />
             {/* Slide 3*/}
-            <img src='https://i.imgur.com/RPx8g53.jpg' className='full-screen hide-overflow-y' />
+            <img src='https://i.imgur.com/RPx8g53.jpg' className='intro-image hide-overflow-y' />
          </Slider>
       </SkewedContainer>
    );
