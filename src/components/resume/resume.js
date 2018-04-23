@@ -2,7 +2,8 @@ import React from 'react';
 import SkewedContainer from 'sc-react';
 import Grid from 'material-ui/Grid';
 import Icon from 'material-ui/Icon'
-import ResumeSection from './../../reusables/resumeSection'
+import ExpSection from './../../reusables/expSection'
+import EduSection from './../../reusables/eduSection';
 import jobExp from './jobExp'
 import eduExp from './eduExp'
 import Divider from 'material-ui/Divider';
@@ -24,13 +25,13 @@ const Resume = () => {
             <Grid item lg={8} style={{ padding: 20 }}>
                {jobExp.map(job => {
                   return (
-                     <ResumeSection
+                     <ExpSection
                         key={job.start}
                         title={job.title}
+                        iconType='work'
                         description={job.description.split('\n').map(i => {
                            return (
                               <div>{i}<br /></div>
-
                            )
                         })}
                         company={job.company}
@@ -40,10 +41,29 @@ const Resume = () => {
                   )
                })}
                <Divider></Divider>
-               <Grid item lg={1} style={{ padding: 20 }}>
+            </Grid>
+         </Grid>
+         <Grid container justify='center'>
+            <Grid item lg={1} style={{ padding: 20 }}>
                <h3>Education</h3>
             </Grid>
-
+            <Grid item lg={8} style={{ padding: 20 }}>
+               {eduExp.map(school => {
+                  return (
+                     <EduSection
+                        key={school.start}
+                        title={school.title}
+                        description={school.description.split('\n').map(i => {
+                           return (
+                              <div>{i}<br /></div>
+                           )
+                        })}
+                        company={school.name}
+                        start={school.start}
+                        end={school.end}
+                     />
+                  )
+               })}
             </Grid>
          </Grid>
       </SkewedContainer>

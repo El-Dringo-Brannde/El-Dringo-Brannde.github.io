@@ -2,7 +2,7 @@ import Grid from 'material-ui/Grid';
 import Icon from 'material-ui/Icon'
 import React from 'react';
 
-const ResumeSection = props => {
+const EduSection = props => {
    return (
       <Grid container>
          <Grid item xs style={{ padding: 20 }}>
@@ -22,4 +22,4 @@ const ResumeSection = props => {
    )
 }
 
-export default ResumeSection
+export default EduSection

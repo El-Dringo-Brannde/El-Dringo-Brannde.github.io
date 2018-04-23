@@ -19,12 +19,12 @@ const AboutMe = () => {
             <h1 className='text-center'>About Me</h1>
          </Grid>
          <Grid container justify='center'>
-            <Grid item sm={3} style={{ padding: 20, margin: 20 }}>
+            <Grid item lg={3} style={{ margin: '25px 35px' }}>
                <Card raised >
                   <div className='image-container-fill'></div>
                </Card>
             </Grid>
-            <Grid item lg={3} style={{ padding: 20, margin: 20 }}>
+            <Grid item xl={3} style={{ margin: 25 }} className='text-center'>
                <h2 style={{ marginTop: 0 }}>Skills</h2>
 
                {Skills.map(skill => {
@@ -37,7 +37,7 @@ const AboutMe = () => {
                })}
 
             </Grid>
-            <Grid item lg={4} style={{ padding: 20, margin: 20 }}>
+            <Grid item lg={4} style={{ margin: '25px 35px' }}>
                <Card raised>
                   <CardContent>
                      <h3>Hi.</h3>
@@ -66,7 +66,7 @@ const AboutMe = () => {
                </Card>
             </Grid>
          </Grid>
-      </SkewedContainer>
+      </SkewedContainer >
    )
 }
 

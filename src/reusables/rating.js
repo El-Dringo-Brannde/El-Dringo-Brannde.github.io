@@ -9,7 +9,7 @@ class SkillRating extends React.Component {
 
    render() {
       return (
-         <div style={{ margin: 8 }}>
+         <div style={{ margin: 5 }}>
             {this.props.skill}
             <br />
             <Rating
@@ -25,7 +25,7 @@ class SkillRating extends React.Component {
                fractions={2}
                readonly
             />
-            <Divider style={{ width: 325 }} />
+            <Divider style={{ width: '12vw' }} />
          </div>
       )
    }
