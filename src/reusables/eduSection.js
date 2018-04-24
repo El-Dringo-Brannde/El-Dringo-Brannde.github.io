@@ -6,8 +6,18 @@ const EduSection = props => {
    return (
       <Grid container>
          <Grid item xs style={{ padding: 20 }}>
-            <strong>{props.title}</strong>
-            {props.description}
+            <h4>{props.title}</h4>
+            <span>
+               <i>Summary - </i>
+               {props.description}
+            </span>
+            <br /><br />
+            <i>Academics - </i> {props.academics}
+            <br /><br />
+            <i>Awards - </i> {props.awards}
+
+            <br /><br />
+            <i>Activities - </i> {props.activities}
          </Grid>
          <Grid item lg={2} style={{ padding: 20 }}>
             <Icon>work</Icon> {props.company}

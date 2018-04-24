@@ -55,10 +55,13 @@ const Resume = () => {
                         title={school.title}
                         description={school.description.split('\n').map(i => {
                            return (
-                              <div>{i}<br /></div>
+                              <span>{i}</span>
                            )
                         })}
+                        academics={school.academics}
                         company={school.name}
+                        awards={school.awards}
+                        activities={school.activities}
                         start={school.start}
                         end={school.end}
                      />
