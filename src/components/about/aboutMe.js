@@ -4,6 +4,7 @@ import Card, { CardMedia, CardContent } from 'material-ui/Card';
 import Grid from 'material-ui/Grid';
 import SkillRating from './../../reusables/rating'
 import Skills from './skills';
+import Divider from 'material-ui/Divider'
 
 
 const AboutMe = () => {
@@ -11,12 +12,13 @@ const AboutMe = () => {
       <SkewedContainer
          top='left'
          bottom="left"
-         bgColor="#f2f2f2"
+         bgColor="#26A69A"
          noMargin
          style={{ marginBottom: 100 }}
       >
          <Grid container justify='center'>
             <h1 className='text-center'>About Me</h1>
+            <Divider style={{ margin: '5vh 15vw', width: '70vw' }}></Divider>
          </Grid>
          <Grid container justify='center'>
             <Grid item lg={3} style={{ margin: '25px 35px' }}>

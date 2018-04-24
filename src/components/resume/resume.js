@@ -7,6 +7,8 @@ import EduSection from './../../reusables/eduSection';
 import jobExp from './jobExp'
 import eduExp from './eduExp'
 import Divider from 'material-ui/Divider';
+import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 
 const Resume = () => {
    return (
@@ -16,11 +18,19 @@ const Resume = () => {
          bgColor="white"
          noMargin>
          <Grid container justify='center'>
-            <h1 className='text-center'>R&#233;sum&#233;</h1>
+            <Typography variant='display2' className='text-center'>R&#233;sum&#233;</Typography>
+
          </Grid>
          <Grid container justify='center'>
-            <Grid item lg={1} style={{ padding: 20 }}>
-               <h3>Experience</h3>
+            <Button variant='flat' >
+               <Icon>get_app</Icon>
+               Download
+               </Button>
+         </Grid>
+         <Divider style={{ margin: '5vh 15vw', width: '70vw' }}></Divider>
+         <Grid container justify='center'>
+            <Grid item lg={2} style={{ padding: 20 }}>
+               <Typography variant='display1'>Experience</Typography>
             </Grid>
             <Grid item lg={8} style={{ padding: 20 }}>
                {jobExp.map(job => {
@@ -44,8 +54,8 @@ const Resume = () => {
             </Grid>
          </Grid>
          <Grid container justify='center'>
-            <Grid item lg={1} style={{ padding: 20 }}>
-               <h3>Education</h3>
+            <Grid item lg={2} style={{ padding: 20 }}>
+               <Typography variant='display1'>Education</Typography>
             </Grid>
             <Grid item lg={8} style={{ padding: 20 }}>
                {eduExp.map(school => {

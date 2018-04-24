@@ -10,8 +10,11 @@ const ExpSection = props => {
             {props.description}
          </Grid>
          <Grid item lg={2} style={{ padding: 20 }}>
-            <Icon>work</Icon> {props.company}
+            <Icon>work</Icon>
+            <div>{props.company}</div>
             <br /> <br />
+            <Icon>access_time</Icon>
+            <br />
             {props.start}
             <br />
             -

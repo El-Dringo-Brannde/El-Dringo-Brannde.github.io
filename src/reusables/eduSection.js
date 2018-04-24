@@ -1,27 +1,33 @@
 import Grid from 'material-ui/Grid';
 import Icon from 'material-ui/Icon'
 import React from 'react';
+import Typography from 'material-ui/Typography';
+
 
 const EduSection = props => {
    return (
       <Grid container>
          <Grid item xs style={{ padding: 20 }}>
-            <h4>{props.title}</h4>
+            <Typography variant='headline'>{props.title}</Typography>
+            <br />
             <span>
-               <i>Summary - </i>
+               <i> <strong>Summary - </strong> </i>
                {props.description}
             </span>
             <br /><br />
-            <i>Academics - </i> {props.academics}
+            <i> <strong>Academics -  </strong></i> {props.academics}
             <br /><br />
-            <i>Awards - </i> {props.awards}
+            <i><strong>Awards - </strong></i> {props.awards}
 
             <br /><br />
-            <i>Activities - </i> {props.activities}
+            <i> <strong>Activities -</strong> </i> {props.activities}
          </Grid>
          <Grid item lg={2} style={{ padding: 20 }}>
-            <Icon>work</Icon> {props.company}
+            <Icon>school</Icon>
+            <div>{props.company}</div>
             <br /> <br />
+            <Icon>access_time</Icon>
+            <br />
             {props.start}
             <br />
             -
