@@ -1,15 +1,16 @@
 import Grid from 'material-ui/Grid';
 import Icon from 'material-ui/Icon'
 import React from 'react';
+import Typography from 'material-ui/Typography';
 
 const ExpSection = props => {
    return (
       <Grid container>
-         <Grid item xs style={{ padding: 20 }}>
-            <strong>{props.title}</strong>
+         <Grid item xs style={{ padding: 20, maxWidth: '58vw' }}>
+            <Typography variant = 'headline'>{props.title}</Typography>
             {props.description}
          </Grid>
-         <Grid item lg={2} style={{ padding: 20 }}>
+         <Grid item lg={2} style={{ padding: 20, maxWidth: '7vw' }}>
             <Icon>work</Icon>
             <div>{props.company}</div>
             <br /> <br />

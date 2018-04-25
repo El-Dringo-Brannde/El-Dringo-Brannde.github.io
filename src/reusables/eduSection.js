@@ -7,7 +7,7 @@ import Typography from 'material-ui/Typography';
 const EduSection = props => {
    return (
       <Grid container>
-         <Grid item xs style={{ padding: 20 }}>
+         <Grid item xs style={{ padding: 20, maxWidth: '55vw' }}>
             <Typography variant='headline'>{props.title}</Typography>
             <br />
             <span>
@@ -22,7 +22,7 @@ const EduSection = props => {
             <br /><br />
             <i> <strong>Activities -</strong> </i> {props.activities}
          </Grid>
-         <Grid item lg={2} style={{ padding: 20 }}>
+         <Grid item lg={2} style={{ padding: 20, maxWidth: '5vw' }}>
             <Icon>school</Icon>
             <div>{props.company}</div>
             <br /> <br />

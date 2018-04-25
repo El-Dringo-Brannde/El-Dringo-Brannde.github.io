@@ -39,7 +39,7 @@ const AboutMe = () => {
                })}
 
             </Grid>
-            <Grid item lg={4} style={{ margin: '25px 35px' }}>
+            <Grid item lg={4} style={{ margin: '25px 35px', maxWidth: '80vw' }}>
                <Card raised>
                   <CardContent>
                      <h3>Hi.</h3>
