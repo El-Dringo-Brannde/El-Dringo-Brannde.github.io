@@ -5,6 +5,7 @@ import Grid from 'material-ui/Grid';
 import SkillRating from './../../reusables/rating'
 import Skills from './skills';
 import Divider from 'material-ui/Divider'
+import Typography from 'material-ui/Typography';
 
 
 const AboutMe = () => {
@@ -17,7 +18,7 @@ const AboutMe = () => {
          style={{ marginBottom: 100 }}
       >
          <Grid container justify='center'>
-            <h1 className='text-center'>About Me</h1>
+            <Typography variant='display2' className='text-center'>About Me</Typography>
             <Divider style={{ margin: '5vh 15vw', width: '70vw' }}></Divider>
          </Grid>
          <Grid container justify='center'>

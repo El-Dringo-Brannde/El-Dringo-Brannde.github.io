@@ -79,6 +79,7 @@ const Resume = () => {
                })}
             </Grid>
          </Grid>
+         <br /><br /><br /><br /><br />
       </SkewedContainer>
    );
 }
