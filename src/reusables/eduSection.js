@@ -10,29 +10,44 @@ const EduSection = props => {
          <Grid item xs style={{ padding: 20, maxWidth: '50vw' }}>
             <Typography variant='headline'>{props.title}</Typography>
             <br />
-            <span>
+            <Typography variant='body2' style={{ fontSize: '1em' }}>
                <i> <strong>Summary - </strong> </i>
                {props.description}
-            </span>
+            </Typography>
             <br /><br />
-            <i> <strong>Academics -  </strong></i> {props.academics}
+
+            <Typography variant='body2' style={{ fontSize: '1em' }}>
+               <i><strong>Academics -  </strong></i>
+               {props.academics}
+            </Typography>
             <br /><br />
-            <i><strong>Awards - </strong></i> {props.awards}
+            <Typography variant='body2' style={{ fontSize: '1em' }}>
+               <i><strong>Awards - </strong></i>
+               {props.awards}
+            </Typography>
 
             <br /><br />
-            <i> <strong>Activities -</strong> </i> {props.activities}
+            <Typography variant='body2' style={{ fontSize: '1em' }}>
+               <i> <strong>Activities -</strong> </i>
+               {props.activities}
+            </Typography>
          </Grid>
          <Grid item lg={2} style={{ padding: 20, maxWidth: '10vw' }}>
             <i class="fas fa-briefcase"></i>
-            <div>{props.company}</div>
-            <br /> <br />
+            <Typography variant='body2' style={{ fontSize: '1em' }}>
+               <div>{props.company}</div>
+               <br /> <br />
+            </Typography>
             <i class="far fa-clock"></i>
             <br />
-            {props.start}
+            <Typography variant='body2' style={{ fontSize: '1em' }}>
+               {props.start}
+               <br />
+               -
             <br />
-            -
-            <br />
-            {props.end}
+
+               {props.end}
+            </Typography>
          </Grid>
       </Grid>
    )

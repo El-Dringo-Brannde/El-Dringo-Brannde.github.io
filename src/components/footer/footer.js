@@ -63,7 +63,7 @@ const Foot = () => {
             <Grid container justify='center'>
                <Grid item>
                   <div>
-                     Made with ❤️ in Portland, Oregon by El-Dringo-Brannde
+                     Made with ❤️ in Portland by El-Dringo-Brannde
                </div>
                </Grid>
             </Grid>

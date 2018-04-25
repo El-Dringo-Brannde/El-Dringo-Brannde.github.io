@@ -7,20 +7,20 @@ const ExpSection = props => {
       <Grid container>
          <Grid item xs style={{ padding: 20, maxWidth: '50vw' }}>
             <Typography variant='headline'>{props.title}</Typography>
-            {props.description}
+            <Typography variant='body2' style={{ fontSize: '1em' }}> {props.description}</Typography>
          </Grid>
          <Grid item lg={2} style={{ padding: 20, maxWidth: '10vw' }}>
             <i class="fas fa-briefcase"></i>
+            <Typography variant='body2' style={{ fontSize: '1em' }}>{props.company}</Typography>
 
-            <div>{props.company}</div>
             <br /> <br />
             <i class="far fa-clock"></i>
             <br />
-            {props.start}
+            <Typography variant='body2' style={{ fontSize: '1em' }}>{props.start}</Typography>
             <br />
             -
             <br />
-            {props.end}
+            <Typography variant='body2' style={{ fontSize: '1em' }}>{props.end}</Typography>
          </Grid>
       </Grid>
    )
