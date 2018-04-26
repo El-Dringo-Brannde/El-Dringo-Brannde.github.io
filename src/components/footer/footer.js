@@ -11,7 +11,7 @@ import './footer.css'
 const Foot = () => {
    return (
       <SkewedContainer
-         top='left'
+         top='right'
          bgColor="#E64A19"
          noMargin>
          <Grid container justify='center'>
@@ -55,7 +55,7 @@ const Foot = () => {
             </Grid>
             <Grid item lg={3} style={{ margin: '25px 35px', maxWidth: '40vw' }}>
                <Card raised >
-                  <div className='contact-photo'></div>
+                  <img src={process.env.PUBLIC_URL + '/DirtbikePhoto.jpg'} className='contact-photo'></img>
                </Card>
             </Grid>
          </Grid>

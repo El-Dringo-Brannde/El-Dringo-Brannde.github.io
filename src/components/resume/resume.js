@@ -22,7 +22,7 @@ const Resume = () => {
 
          </Grid>
          <Grid container justify='center'>
-            <Button variant='flat' >
+            <Button variant='flat' href='https://docs.google.com/document/d/1sSrzCyaX1cOhHndrKpnWjS5U9VkeYyx-MiNzq2Ej_VI/edit?usp=sharing'>
                <Icon>get_app</Icon>
                Download
                </Button>
