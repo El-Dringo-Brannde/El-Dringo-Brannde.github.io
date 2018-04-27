@@ -13,6 +13,7 @@ const Foot = () => {
       <SkewedContainer
          top='right'
          bgColor="#E64A19"
+         className='contact-me'
          noMargin>
          <Grid container justify='center'>
             <Typography variant='display2' className='text-center'>Contact Me</Typography>

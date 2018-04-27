@@ -15,8 +15,9 @@ const AboutMe = () => {
       <SkewedContainer
          top='left'
          bottom="left"
-         bgColor="#26A69A"
+         bgColor="#F44336"
          noMargin
+         className='about-me'
          style={{ marginBottom: 100 }}
       >
          <Grid container justify='center'>

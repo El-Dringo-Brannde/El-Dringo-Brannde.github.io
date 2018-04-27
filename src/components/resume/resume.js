@@ -16,6 +16,7 @@ const Resume = () => {
          top='right'
          bottom="right"
          bgColor="white"
+         className='resume'
          noMargin>
          <Grid container justify='center'>
             <Typography variant='display2' className='text-center'>R&#233;sum&#233;</Typography>

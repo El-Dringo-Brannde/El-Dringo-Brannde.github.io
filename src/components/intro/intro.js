@@ -19,31 +19,33 @@ const Intro = () => {
    return (
       <SkewedContainer
          bottom='right'
+         className='intro'
          noMargin>
          <div className=' margin-25 center-text overlay-div thick-characters hack-headline'>
             <div className="cd-headline letters type">
                <span>Hi, I'm Brandon. </span>
                <br />
-               <span>Professional Coder. Amateur Beer, & Coffee Drinker</span>
+               <span>Coder. Amateur Beer, & Coffee Drinker</span>
                <br />
                <span>I design & build </span>
                <span className="cd-words-wrapper waiting">
-                  <b className="is-visible">Full Stack Websites. &nbsp;</b>
+                  <b className="is-visible">Websites. &nbsp;</b>
                   <b>Mobile apps. &nbsp;</b>
                   <b>Angular Apps. &nbsp;</b>
                   <b>Electron Apps. &nbsp;</b>
                   <b>Node.JS Servers. &nbsp;</b>
-                  <b>Python Automation Scripts. &nbsp;</b>
                </span>
             </div>
          </div>
          <Slider {...settings} className='intro-image hide-overflow-y'>
             {/* Slide 1 */}
-            <img src='https://i.imgur.com/KVg0kyA.jpg' className='intro-image hide-overflow-y' />
+            <img src={process.env.PUBLIC_URL + '/Yosemite.jpg'} className='intro-image hide-overflow-y' />
             {/* Slide 2 */}
-            <img src='https://i.imgur.com/b2zJh4o.jpg' className='intro-image hide-overflow-y' />
+            <img src={process.env.PUBLIC_URL + '/PacificOcean.jpg'} className='intro-image hide-overflow-y' />
             {/* Slide 3*/}
-            <img src='https://i.imgur.com/RPx8g53.jpg' className='intro-image hide-overflow-y' />
+            <img src={process.env.PUBLIC_URL + '/MtHood.jpg'} className='intro-image hide-overflow-y' />
+            {/* Slide 4*/}
+            <img src={process.env.PUBLIC_URL + '/GrandCanyon.jpg'} className='intro-image hide-overflow-y' />
          </Slider>
       </SkewedContainer>
    );

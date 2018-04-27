@@ -13,20 +13,20 @@ const Portfolio = () => {
    return (
       <SkewedContainer
          top='left'
-         bgColor="#26A69A"
+         bgColor="#00B0FF"
          noMargin
+         className='portfolio'
          style={{ paddingBottom: 100 }}
       >
          <Grid container justify='center'>
             <Typography variant='display2' className='text-center'>Portfolio</Typography>
             <Divider style={{ margin: '5vh 15vw', width: '70vw' }}></Divider>
          </Grid>
-         <Grid container justify='center' style={{ marginBottom: '5vh', overflow: 'inherit' }} >
+         <Grid container justify='center' style={{ marginBottom: '5vh' }} >
             {
                projects.map(element => {
                   return (
                      <PortfolioCards
-                        stlye = {{overflow: 'inherit'}}
                         title={element.title}
                         description={element.description}
                         image={element.image}
@@ -35,7 +35,6 @@ const Portfolio = () => {
                      />
                   )
                })
-
             }
          </Grid>
       </SkewedContainer>

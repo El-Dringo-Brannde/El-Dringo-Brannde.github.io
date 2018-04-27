@@ -29,9 +29,9 @@ class PortfolioCards extends React.Component {
 
    render() {
       return (
-         <Grid item lg style={{ margin: '25px 35px', height: '50vh', width: '70vw' }} >
+         <Grid item lg={3} style={{ margin: '50px 35px', minHeight: '30vh', height: '50vh', width: '70vw' }} >
             <p className='portfolio-item'>
-               < Card
+               <Card
                   style={{ maxHeight: '100%', maxWidth: '100%', cursor: 'pointer' }}
                   raised={this.state.checked}
                   className='portfolio-item-preview'
@@ -40,7 +40,7 @@ class PortfolioCards extends React.Component {
                   onMouseEnter={this.handleChange}
                   onMouseLeave={this.handleChange}>
                   <CardMedia
-                     image={process.env.PUBLIC_URL + '/brewsterLogo.png'}
+                     image={process.env.PUBLIC_URL + this.props.image}
                      style={{ paddingTop: '25%', backgroundSize: "contain", maxHeight: '15vh' }}
                   />
                   <CardContent>
@@ -52,11 +52,11 @@ class PortfolioCards extends React.Component {
                      </Typography>
                      <Typography variant='body2' className='portfolio-item-description'>
                         Tech Used.
-                        <Divider style = {{marginBottom: '5px'}}/>
+                        <Divider style={{ marginBottom: '5px' }} />
                         {
                            this.props.tech.map(el => {
                               return (
-                                 <i class={el} style={{ fontSize: '3rem', margin: '0px 5px'}} ></i>
+                                 <i class={el} style={{ fontSize: '3.2rem', margin: '0px 5px' }} ></i>
                               )
                            })
                         }
@@ -71,7 +71,7 @@ class PortfolioCards extends React.Component {
                   </CardContent>
                </Card>
             </p >
-            <br/><br/><br/>
+            <br /><br /><br />
          </Grid >
       )
    }
