@@ -11,7 +11,7 @@ const projects = [{
       "devicon-express-original-wordmark colored",
 
    ],
-   links: 'https://github.com/El-Dringo-Brannde/LunchBox'
+   link: 'https://github.com/El-Dringo-Brannde/LunchBox'
 }, {
    title: 'Brewster',
    image: '/brewsterLogo.png',

@@ -35,7 +35,6 @@ class PortfolioCards extends React.Component {
                   style={{ maxHeight: '100%', maxWidth: '100%', cursor: 'pointer' }}
                   raised={this.state.checked}
                   className='portfolio-item-preview'
-                  href={this.props.link}
                   onClick={this.navigateAway}
                   onMouseEnter={this.handleChange}
                   onMouseLeave={this.handleChange}>

@@ -31,7 +31,7 @@ const Portfolio = () => {
                         description={element.description}
                         image={element.image}
                         tech={element.tech}
-                        links={element.links}
+                        link={element.link}
                      />
                   )
                })
