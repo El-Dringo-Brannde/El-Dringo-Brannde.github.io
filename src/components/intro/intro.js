@@ -25,7 +25,7 @@ const Intro = () => {
             <div className="cd-headline letters type">
                <span>Hi, I'm Brandon. </span>
                <br />
-               <span>Coder. Amateur Beer, & Coffee Drinker</span>
+               <span>Coder, Beer, & Coffee Drinker &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>
                <br />
                <span>I design & build </span>
                <span className="cd-words-wrapper waiting">

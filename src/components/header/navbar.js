@@ -9,7 +9,7 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 
 const NavBar = props => {
    return (
-      <AppBar position='sticky' color='white' style={{ padding: 15 }}>
+      <AppBar position='sticky' color='white' style={{ padding: 10 }}>
          <Grid container spacing={46}>
             <Grid item sm={8}>
                <Typography
@@ -26,7 +26,7 @@ const NavBar = props => {
             </Grid>
             <Grid item sm={4}  >
                <Grid container justify='flex-end'>
-                  <Grid item style={{ padding: '0px 15px' }}>
+                  <Grid item style={{ padding: '0px 10px' }}>
                      <Typography
                         variant="subheading"
                         color="inherit"
@@ -39,7 +39,7 @@ const NavBar = props => {
                         About Me
                      </Typography>
                   </Grid>
-                  <Grid item style={{ padding: '0px 15px' }}>
+                  <Grid item style={{ padding: '0px 10px' }}>
                      <Typography
                         variant="subheading"
                         color="inherit"
@@ -52,7 +52,7 @@ const NavBar = props => {
                         Resume
                      </Typography>
                   </Grid>
-                  <Grid item style={{ padding: '0px 15px' }}>
+                  <Grid item style={{ padding: '0px 10px' }}>
                      <Typography
                         variant="subheading"
                         color="inherit"
@@ -65,7 +65,7 @@ const NavBar = props => {
                         Portfolio
                      </Typography>
                   </Grid>
-                  <Grid item style={{ padding: '0px 20px' }}>
+                  <Grid item style={{ padding: '0px 10px' }}>
                      <Typography
                         variant="subheading"
                         color="inherit"
