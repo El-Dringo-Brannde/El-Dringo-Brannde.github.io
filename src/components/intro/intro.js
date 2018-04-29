@@ -21,8 +21,10 @@ const Intro = () => {
          bottom='right'
          className='intro'
          noMargin>
-         <div className=' margin-25 center-text overlay-div thick-characters hack-headline'>
-            <div className="cd-headline letters type">
+         <div
+            className='center-text overlay-div thick-characters hack-headline'
+            style={{ margin: '75px' }}>
+            <div className="cd-headline letters type" style={{ maxWidth: '80vw' }}>
                <span>Hi, I'm Brandon. </span>
                <br />
                <span>Coder, Beer, & Coffee Drinker &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>

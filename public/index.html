@@ -7,6 +7,7 @@
          content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="theme-color"
          content="#000000">
+
    <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -15,11 +16,31 @@
          href="%PUBLIC_URL%/manifest.json">
    <link rel="shortcut icon"
          href="https://i.imgur.com/46WxD2B.png">
+
+
+   <!-- Animation -->
+   <script src="./jquery.min.js"></script>
    <link rel='stylesheet'
          href='./animated-headline.css'>
-   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
+   <link rel="stylesheet"
+         href="./animate.css">
+
+   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+         rel="stylesheet">
+
+
+   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">
+      AOS.init();
+   </script>
+
+   <script src='./animated-headline.js'></script>
+
+   <!-- Icons -->
+   <link rel="stylesheet"
+         href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+   <link rel="stylesheet"
+         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
    <link rel="stylesheet"
          href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <link rel="stylesheet"
@@ -27,13 +48,6 @@
          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
          crossorigin="anonymous">
 
-
-
-
-
-   <script src="./jquery.min.js">
-   </script>
-   <script src='./animated-headline.js'></script>
    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

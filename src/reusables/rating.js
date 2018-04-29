@@ -25,7 +25,7 @@ class SkillRating extends React.Component {
                fractions={2}
                readonly
             />
-            <Divider style={{ width: '12vw' }} />
+            <Divider />
          </div>
       )
    }

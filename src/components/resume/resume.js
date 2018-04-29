@@ -9,6 +9,7 @@ import eduExp from './eduExp'
 import Divider from 'material-ui/Divider';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Resume = () => {
    return (
@@ -19,10 +20,12 @@ const Resume = () => {
          className='resume'
          noMargin>
          <Grid container justify='center'>
-            <Typography variant='display2' className='text-center'>R&#233;sum&#233;</Typography>
-
+            <ScrollAnimation animateOnce animateIn='bounceInRight'>
+               <Typography variant='display2' className='text-center'>R&#233;sum&#233;</Typography>
+            </ScrollAnimation>
          </Grid>
          <Grid container justify='center'>
+
             <Button variant='flat' href='https://docs.google.com/document/d/1sSrzCyaX1cOhHndrKpnWjS5U9VkeYyx-MiNzq2Ej_VI/edit?usp=sharing'>
                <Icon>get_app</Icon>
                Download

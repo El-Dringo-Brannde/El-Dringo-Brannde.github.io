@@ -1,7 +1,14 @@
 .hack-headline{
    right: 0px;
    margin-right: 0px !important;
-   padding-right: 30vw;
+   padding-right: 33vw;
+   max-width: 80%;
+}
+
+@media screen and (max-width: 600px){
+   .hack-headline{
+      padding-right:5vw;
+   }
 }
 
 .intro-image {

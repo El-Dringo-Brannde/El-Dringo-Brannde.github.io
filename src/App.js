@@ -9,6 +9,7 @@ import Portfolio from './components/portfolio/portfolio'
 import Foot from './components/footer/footer'
 
 import './globals.css'
+import 'mdbreact/dist/css/mdb.css'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 
