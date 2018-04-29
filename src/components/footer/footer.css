@@ -1,0 +1,12 @@
+.contact-photo{
+   background-size: contain;
+   height: 450px;
+   width: 25vw;
+}
+
+@media screen and (max-width: 600px){
+   .contact-photo{
+      height: 60vh;
+      width: 80vw;
+   }
+}
