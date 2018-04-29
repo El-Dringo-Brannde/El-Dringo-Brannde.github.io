@@ -60,7 +60,7 @@ const projects = [{
    link: 'https://github.com/El-Dringo-Brannde/CS340-Databases/tree/master/Final%20Project'
 }, {
    title: 'Bonsai',
-   image: '/BonsaiScreenshot.png',
+   image: '/BonsaiScreenshot.jpg',
    description: 'Worked alongside Nicholas Nelson on his PhD IDE Bonsai (Now called Synectic). Tries the concept of making an IDE  a problem solving environment, rather than a text editor.',
    tech: [
       "devicon-atom-original colored",
