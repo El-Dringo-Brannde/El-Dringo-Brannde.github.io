@@ -5,7 +5,8 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider'
 import projects from "./projects";
-import PortfolioCards from "./../../reusables/portfolioCards";
+import ScrollAnimation from 'react-animate-on-scroll'
+import PortfolioCards from "./cards";
 import './portfolio.css'
 
 
@@ -19,12 +20,15 @@ const Portfolio = () => {
          style={{ paddingBottom: 100 }}
       >
          <Grid container justify='center'>
-            <Typography variant='display2' className='text-center'>Portfolio</Typography>
-            <Divider style={{ margin: '5vh 15vw', width: '70vw' }}></Divider>
+            <ScrollAnimation animateOnce animateIn='bounceInUp'>
+               <Typography variant='display2' className='text-center'>Portfolio</Typography>
+               <Divider style={{ margin: '5vh 15vw', width: '70vw' }}></Divider>
+            </ScrollAnimation>
          </Grid>
          <Grid container justify='center' style={{ marginBottom: '5vh' }} >
             {
-               projects.map(element => {
+               projects.map((element, idx) => {
+
                   return (
                      <PortfolioCards
                         title={element.title}
@@ -32,6 +36,8 @@ const Portfolio = () => {
                         image={element.image}
                         tech={element.tech}
                         link={element.link}
+                        idx={idx}
+                        key={idx}
                      />
                   )
                })
