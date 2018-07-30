@@ -7,14 +7,26 @@ import 'mdbreact/dist/css/mdb.css'
 
 import HomePage from './pages/home'
 
+import {
+   BrowserRouter,
+   Route, Switch
+} from 'react-router-dom'
+
+const Portfolio = () => (
+   <div>
+      <NavBar></NavBar>
+      <HomePage></HomePage>
+   </div>
+)
 
 class App extends Component {
    render() {
       return (
-         <div>
-            <NavBar></NavBar>
-            <HomePage></HomePage>
-         </div>
+         <BrowserRouter>
+            <Switch>
+               <Route path='/' exact component={Portfolio} />
+            </Switch>
+         </BrowserRouter>
       );
    }
 }
