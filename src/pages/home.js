@@ -10,7 +10,7 @@ import Foot from './../components/footer/footer';
 
 const HomePage = () => {
 	return (
-		<div>
+		<React.Fragment>
 			<ParallaxProvider>
 				<Parallax>
 					<Intro />
@@ -28,7 +28,7 @@ const HomePage = () => {
 					<Foot />
 				</Parallax>
 			</ParallaxProvider>
-		</div>
+		</React.Fragment>
 	);
 };
 

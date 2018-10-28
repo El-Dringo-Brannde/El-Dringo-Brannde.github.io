@@ -9,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import ScrollAnimation from 'react-animate-on-scroll';
-let self;
 
 let anime = ['Left', 'Up', 'Right', 'Left', 'Up', 'Right'];
 
@@ -19,15 +18,17 @@ class PortfolioCards extends React.Component {
 	};
 	constructor(props) {
 		super(props);
-		self = this;
+		this.handleChange = this.handleChange.bind(this)
+		this.navigateAway = this.navigateAway.bind(this)
+
 	}
 
 	handleChange() {
-		self.setState({ checked: !self.state.checked });
+		this.setState({ checked: !this.state.checked });
 	}
 
 	navigateAway() {
-		window.location.href = self.props.link;
+		window.location.href = this.props.link;
 	}
 
 	render() {

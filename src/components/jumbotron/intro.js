@@ -2,6 +2,7 @@ import React from 'react';
 
 import SkewedContainer from 'sc-react';
 import Slider from 'react-slick';
+import { images, skills } from './carousel';
 
 import './intro.css';
 
@@ -34,35 +35,23 @@ const Intro = () => (
 				<br />
 				<span>I design & build </span>
 				<span className="cd-words-wrapper waiting">
-					<b className="is-visible">Websites. &nbsp;</b>
-					<b>Mobile apps. &nbsp;</b>
-					<b>Angular Apps. &nbsp;</b>
-					<b>Electron Apps. &nbsp;</b>
-					<b>Node.JS Servers. &nbsp;</b>
+					{
+						skills.map(el => el)
+					}
 				</span>
 			</div>
 		</div>
 		<Slider {...settings} className="intro-image hide-overflow-y">
-			{/* Slide 1 */}
-			<img
-				src={process.env.PUBLIC_URL + '/Yosemite.jpg'}
-				className="intro-image hide-overflow-y"
-			/>
-			{/* Slide 2 */}
-			<img
-				src={process.env.PUBLIC_URL + '/PacificOcean.jpg'}
-				className="intro-image hide-overflow-y"
-			/>
-			{/* Slide 3*/}
-			<img
-				src={process.env.PUBLIC_URL + '/MtHood.jpg'}
-				className="intro-image hide-overflow-y"
-			/>
-			{/* Slide 4*/}
-			<img
-				src={process.env.PUBLIC_URL + '/GrandCanyon.jpg'}
-				className="intro-image hide-overflow-y"
-			/>
+			{
+				images.map((el, idx) => (
+					<img
+						src={el}
+						alt={el}
+						key={idx}
+						className="intro-image hide-overflow-y"
+					/>
+				))
+			}
 		</Slider>
 	</SkewedContainer>
 );
