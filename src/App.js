@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import NavBar from './components/nav/bar';
 
@@ -9,22 +9,17 @@ import HomePage from './pages/home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Portfolio = () => (
-	<div>
+	<React.Fragment>
 		<NavBar />
 		<HomePage />
-	</div>
+	</React.Fragment>
 );
 
-class App extends Component {
-	render() {
-		return (
-			<BrowserRouter>
-				<Switch>
-					<Route path="/" exact component={Portfolio} />
-				</Switch>
-			</BrowserRouter>
-		);
-	}
-}
-
+const App = () => (
+	<BrowserRouter>
+		<Switch>
+			<Route path="/" exact component={Portfolio} />
+		</Switch>
+	</BrowserRouter>
+);
 export default App;
