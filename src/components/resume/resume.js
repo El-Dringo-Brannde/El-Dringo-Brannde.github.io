@@ -1,15 +1,17 @@
 import React from 'react';
 import SkewedContainer from 'sc-react';
-import Grid from 'material-ui/Grid';
-import Icon from 'material-ui/Icon'
-import ExpSection from './expSection'
+
+import ExpSection from './expSection';
 import EduSection from './eduSection';
-import jobExp from './jobExp'
-import eduExp from './eduExp'
-import Divider from 'material-ui/Divider';
-import Button from 'material-ui/Button';
-import Typography from 'material-ui/Typography';
-import ScrollAnimation from "react-animate-on-scroll";
+import jobExp from './jobExp';
+import eduExp from './eduExp';
+
+import Grid from '@material-ui/core/Grid';
+import Icon from '@material-ui/core/Icon';
+import Divider from '@material-ui/core/Divider';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Resume = () => {
    return (
@@ -75,9 +77,9 @@ const Resume = () => {
                         <EduSection
                            key={school.start}
                            title={school.title}
-                           description={school.description.split('\n').map((i,idx) => {
+                           description={school.description.split('\n').map((i, idx) => {
                               return (
-                                 <span key = {idx}>{i}</span>
+                                 <span key={idx}>{i}</span>
                               )
                            })}
                            academics={school.academics}

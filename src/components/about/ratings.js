@@ -1,7 +1,8 @@
 import React from 'react'
 import Rating from 'react-rating';
-import Divider from 'material-ui/Divider';
-import Typography from 'material-ui/Typography';
+
+import Divider from '@material-ui/core/Divider';
+import Typography from '@material-ui/core/Typography';
 
 class SkillRating extends React.Component {
    constructor(props) {

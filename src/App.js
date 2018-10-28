@@ -6,7 +6,6 @@ import './globals.css'
 import 'mdbreact/dist/css/mdb.css'
 
 import HomePage from './pages/home'
-
 import {
    BrowserRouter,
    Route, Switch
