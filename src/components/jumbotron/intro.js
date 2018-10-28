@@ -1,8 +1,10 @@
 import React from 'react';
-import SkewedContainer from 'sc-react'
-import './intro.css'
-import Slider from 'react-slick'
-import Grid from 'material-ui/Grid';
+
+import SkewedContainer from 'sc-react';
+import Slider from 'react-slick';
+
+import './intro.css';
+
 
 const settings = {
    dots: false,

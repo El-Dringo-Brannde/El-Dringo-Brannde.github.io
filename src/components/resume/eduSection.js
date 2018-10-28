@@ -1,7 +1,7 @@
-import Grid from 'material-ui/Grid';
-import Icon from 'material-ui/Icon'
 import React from 'react';
-import Typography from 'material-ui/Typography';
+
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 
 const EduSection = props => {
