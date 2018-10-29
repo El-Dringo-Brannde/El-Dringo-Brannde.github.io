@@ -1,33 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import NavBar from './components/nav/bar'
+import NavBar from './components/nav/bar';
 
-import './globals.css'
-import 'mdbreact/dist/css/mdb.css'
+import './globals.css';
+import 'mdbreact/dist/css/mdb.css';
 
-import HomePage from './pages/home'
-import {
-   BrowserRouter,
-   Route, Switch
-} from 'react-router-dom'
+import HomePage from './pages/home';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Portfolio = () => (
-   <div>
-      <NavBar></NavBar>
-      <HomePage></HomePage>
-   </div>
-)
+	<React.Fragment>
+		<NavBar />
+		<HomePage />
+	</React.Fragment>
+);
 
-class App extends Component {
-   render() {
-      return (
-         <BrowserRouter>
-            <Switch>
-               <Route path='/' exact component={Portfolio} />
-            </Switch>
-         </BrowserRouter>
-      );
-   }
-}
-
+const App = () => (
+	<BrowserRouter>
+		<Switch>
+			<Route path="/" exact component={Portfolio} />
+		</Switch>
+	</BrowserRouter>
+);
 export default App;

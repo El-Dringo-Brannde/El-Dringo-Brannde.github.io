@@ -5,6 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import SkillRating from './ratings';
 import Skills from './skills';
+import bio from './bio';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -49,15 +50,13 @@ const AboutMe = () => (
 						<Typography variant="display1" style={{ marginTop: 0 }}>
 							Skills
 						</Typography>
-						{Skills.map(skill => {
-							return (
-								<SkillRating
-									key={skill.name}
-									skill={skill.name}
-									rating={skill.rating}
-								/>
-							);
-						})}
+						{Skills.map(skill => (
+							<SkillRating
+								key={skill.name}
+								skill={skill.name}
+								rating={skill.rating}
+							/>
+						))}
 					</ScrollAnimation>
 				</Grid>
 				<Grid
@@ -70,53 +69,22 @@ const AboutMe = () => (
 							<CardContent>
 								<Typography variant="headline">Hi.</Typography>
 								<br />
-								<Typography
-									variant="body2"
-									style={{
-										fontSize: '1em',
-										lineHeight: '1.15em'
-									}}
-								>
-									Thanks for checking out my portfolio page.
-									My name is Brandon, I'm a big fan of
-									travelling on my motorcycle when I can,
-									eating all the food I can find, and tasting
-									local beers. I also pretty religiously
-									follow the NBA, College Football, NFL, NHL..
-									really any sports.
-								</Typography>
-								<br />
-								<Typography
-									variant="body2"
-									style={{
-										fontSize: '1em',
-										lineHeight: '1.15em'
-									}}
-								>
-									Currently I'm attending Oregon State
-									University as a Computer Science student,
-									with a focus in Human Computer Interaction,
-									and UX design as I saw it was one of my
-									weakest qualities. I'm just about done too!
-									I only need to take a few underwater basket
-									weaving classes then I'm done by December
-									2018!
-								</Typography>
-								<br />
-								<Typography
-									variant="body2"
-									style={{
-										fontSize: '1em',
-										lineHeight: '1.15em'
-									}}
-								>
-									Outside of school I like to poke around
-									different disciplines, and programming
-									languages or frameworks. Right now I have a
-									mobile/ cloud design bug, and have been
-									exploring technologies in those areas.
-								</Typography>
-								<br />
+								{
+									bio.map(el => (
+										<React.Fragment>
+											<Typography
+												variant="body2"
+												style={{
+													fontSize: '1em',
+													lineHeight: '1.15em'
+												}}
+											>
+												{el}
+											</Typography>
+											<br />
+										</React.Fragment>
+									))
+								}								<br />
 								<Typography variant="headline">
 									Social.
 								</Typography>
