@@ -27,13 +27,13 @@ export default class NavBar extends React.Component {
 
 	onClick() {
 		this.setState(prevState => {
-			return { collapse: !prevState.collapse }
+			return { collapse: !prevState.collapse };
 		});
 	}
 
 	toggle() {
 		this.setState(prevState => {
-		return {dropdownOpen: !prevState.dropdownOpen}
+			return { dropdownOpen: !prevState.dropdownOpen };
 		});
 	}
 

@@ -25,7 +25,7 @@ const Resume = () => (
 			<ScrollAnimation animateOnce animateIn="bounceInDown">
 				<Typography variant="display2" className="text-center">
 					R&#233;sum&#233;
-					</Typography>
+				</Typography>
 			</ScrollAnimation>
 		</Grid>
 		<Grid container justify="center">
@@ -36,7 +36,7 @@ const Resume = () => (
 				>
 					<Icon>get_app</Icon>
 					Download
-					</Button>
+				</Button>
 			</ScrollAnimation>
 		</Grid>
 		<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />
@@ -111,6 +111,5 @@ const Resume = () => (
 		<br />
 	</SkewedContainer>
 );
-
 
 export default Resume;

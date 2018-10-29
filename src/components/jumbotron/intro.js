@@ -31,27 +31,23 @@ const Intro = () => (
 				<span>
 					Coder, Beer, & Coffee Drinker &nbsp;
 					&nbsp;&nbsp;&nbsp;&nbsp;
-					</span>
+				</span>
 				<br />
 				<span>I design & build </span>
 				<span className="cd-words-wrapper waiting">
-					{
-						skills.map(el => el)
-					}
+					{skills.map(el => el)}
 				</span>
 			</div>
 		</div>
 		<Slider {...settings} className="intro-image hide-overflow-y">
-			{
-				images.map((el, idx) => (
-					<img
-						src={el}
-						alt={el}
-						key={idx}
-						className="intro-image hide-overflow-y"
-					/>
-				))
-			}
+			{images.map((el, idx) => (
+				<img
+					src={el}
+					alt={el}
+					key={idx}
+					className="intro-image hide-overflow-y"
+				/>
+			))}
 		</Slider>
 	</SkewedContainer>
 );

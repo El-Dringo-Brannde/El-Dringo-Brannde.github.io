@@ -18,9 +18,8 @@ class PortfolioCards extends React.Component {
 	};
 	constructor(props) {
 		super(props);
-		this.handleChange = this.handleChange.bind(this)
-		this.navigateAway = this.navigateAway.bind(this)
-
+		this.handleChange = this.handleChange.bind(this);
+		this.navigateAway = this.navigateAway.bind(this);
 	}
 
 	handleChange() {

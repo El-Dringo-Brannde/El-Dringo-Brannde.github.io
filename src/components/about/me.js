@@ -69,22 +69,21 @@ const AboutMe = () => (
 							<CardContent>
 								<Typography variant="headline">Hi.</Typography>
 								<br />
-								{
-									bio.map(el => (
-										<React.Fragment>
-											<Typography
-												variant="body2"
-												style={{
-													fontSize: '1em',
-													lineHeight: '1.15em'
-												}}
-											>
-												{el}
-											</Typography>
-											<br />
-										</React.Fragment>
-									))
-								}								<br />
+								{bio.map(el => (
+									<React.Fragment>
+										<Typography
+											variant="body2"
+											style={{
+												fontSize: '1em',
+												lineHeight: '1.15em'
+											}}
+										>
+											{el}
+										</Typography>
+										<br />
+									</React.Fragment>
+								))}{' '}
+								<br />
 								<Typography variant="headline">
 									Social.
 								</Typography>

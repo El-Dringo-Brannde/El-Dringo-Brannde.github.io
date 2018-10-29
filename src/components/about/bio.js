@@ -18,6 +18,6 @@ const bio = [
 	I have also started getting back into video games again. If the work 
 	day has been easy, I usually try and dabble in mobile development, or Mac development.`
 	// hobbies
-]
+];
 
-export default bio
+export default bio;
