@@ -1,5 +1,13 @@
 const jobExp = [
 	{
+		title: 'Rotational Engineer',
+		description: `Member of the cloud automation team within Corporate Information Security (CIS). \n
+		Redesigned AWS metadata database, automated workflows that kept scan engines up to date, and scheduled processes to make sure backups are always current and deleted on time. Currently working on creating a Slackbot frame work to be able to enable Chat Ops within Nike. `,
+		company: 'Nike Inc.',
+		start: '09/04/18',
+		end: 'Present'
+	},
+	{
 		title: 'Software Development Intern',
 		description: `
       Worked inside a data and analytics team, that primarily used Angular.JS, Node.JS, HapiJS, and MongoDB as their tech stack. Then deployment was handled by a kubernetes and docker combo to be deployed to the cloud, along with a Gulp build system to put it all together.
@@ -22,17 +30,6 @@ const jobExp = [
 		company: 'Oregon State University',
 		start: 'October 2016',
 		end: 'September 2016'
-	},
-	{
-		title: 'Undergraduate Student Researcher',
-		description: `
-      Had my own grant funded research project to investigate and create data visualizations for which areas of Portland had the best tips when it came to pizza delivery (Data gathered from my previous couple years as a delivery driver).
-      \n
-      Also created data visualizations to figure out what rumble strip configuration was best based off of angle and speed for NHTSA
-      `,
-		company: 'Oregon State University',
-		start: 'September 2016',
-		end: 'June 2017'
 	}
 ];
 

@@ -9,7 +9,7 @@ const eduExp = [
 		awards:
 			'Engineering Honor Roll, Science Honor Roll, Microbiology Honor Roll',
 		start: 'January 2015',
-		end: 'Present'
+		end: 'September 2018'
 	},
 	{
 		title: 'Associates Transfer',

@@ -92,18 +92,16 @@ class PortfolioCards extends React.Component {
 								>
 									Tech Used.
 									<Divider style={{ marginBottom: '5px' }} />
-									{this.props.tech.map(el => {
-										return (
-											<i
-												key={el}
-												className={el}
-												style={{
-													fontSize: '3.2rem',
-													margin: '0px 5px'
-												}}
-											/>
-										);
-									})}
+									{this.props.tech.map((el, idx) => (
+										<i
+											key={el}
+											className={el}
+											style={{
+												fontSize: '3.2rem',
+												margin: '0px 5px'
+											}}
+										/>
+									))}
 									<br />
 									<br />
 									<br />

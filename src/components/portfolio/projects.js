@@ -31,19 +31,20 @@ const projects = [
 		link: 'https://github.com/El-Dringo-Brannde/Brewster_Mobile'
 	},
 	{
-		title: 'Phillips Hue Touch Bar',
-		image: '/TouchBarHueController.png',
+		title: 'Trump Tracker',
+		image: '/trump-icon.png',
 		description:
-			'An exercise to learn how to build an actual MacOS executable app that lives in the menubar. I use it to control the phillips hue lights inside my house from the touch bar on my Mac. ',
+			'A class project that has turned into a fun little side project. It focuses on pulling Donald Trumps Tweets and analyzing them by tweet times, word types, frequent hash tags and whom he has tweeted at. ',
 		tech: [
-			'devicon-atom-original colored',
-			'devicon-typescript-plain colored',
-			'devicon-apple-original colored'
+			'devicon-react-original-wordmark colored',
+			'devicon-nodejs-plain colored',
+			'devicon-mongodb-plain-wordmark colored',
+			'devicon-express-original-wordmark colored'
 		],
-		link: 'https://github.com/El-Dringo-Brannde/Phillips-Hue-Controller'
+		link: 'https://github.com/El-Dringo-Brannde/Trump-Twitter-Tracker-Web'
 	},
 	{
-		title: 'Senior Capstone Project',
+		title: 'Senior Capstone',
 		image: '/CapstoneLogo.jpg',
 		description:
 			'Created a proof of concept and added the ability to use a computer to visualize data with anything but a mouse and keyboard. Instead using the Amazon Alexa and HTC Vive for data visualization',
