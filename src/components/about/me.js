@@ -69,8 +69,8 @@ const AboutMe = () => (
 							<CardContent>
 								<Typography variant="headline">Hi.</Typography>
 								<br />
-								{bio.map(el => (
-									<React.Fragment>
+								{bio.map((el, idx) => (
+									<React.Fragment key={idx}>
 										<Typography
 											variant="body2"
 											style={{
