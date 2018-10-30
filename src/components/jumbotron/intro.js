@@ -2,8 +2,12 @@ import React from 'react';
 
 import SkewedContainer from 'sc-react';
 import Slider from 'react-slick';
-import { images, skills } from './carousel';
+import Typing from 'react-typing-animation';
 
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+
+import { images, skills } from './carousel';
 import './intro.css';
 
 const settings = {
@@ -18,27 +22,40 @@ const settings = {
 
 const Intro = () => (
 	<SkewedContainer bottom="right" className="intro" noMargin>
-		<div
-			className="center-text overlay-div thick-characters hack-headline"
-			style={{ margin: '75px' }}
+		<Grid
+			container
+			direction="row"
+			justify="center"
+			alignItems="center"
+			style={{
+				marginTop: '20vh',
+				position: 'absolute',
+				zIndex: 1000
+			}}
 		>
-			<div
-				className="cd-headline letters type"
-				style={{ maxWidth: '80vw' }}
-			>
-				<span>Hi, I'm Brandon. </span>
-				<br />
-				<span>
-					Coder, Beer, & Coffee Drinker &nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;
-				</span>
-				<br />
-				<span>I design & build </span>
-				<span className="cd-words-wrapper waiting">
-					{skills.map(el => el)}
-				</span>
-			</div>
-		</div>
+			<Grid item>
+				<Typography
+					variant="display2"
+					style={{ color: 'white' }}
+					component="div"
+				>
+					Hi, I'm Brandon
+					<br />
+					Coder, Beer, &amp; Coffee Drinker
+					<br />I design &amp; build..
+					<Typing speed={150}>
+						{skills.map((el, idx) => (
+							<React.Fragment>
+								{el}
+								<Typing.Delay ms={1000} />
+								<Typing.Backspace count={el.length} />
+								<Typing.Delay ms={500} />
+							</React.Fragment>
+						))}
+					</Typing>
+				</Typography>
+			</Grid>
+		</Grid>
 		<Slider {...settings} className="intro-image hide-overflow-y">
 			{images.map((el, idx) => (
 				<img

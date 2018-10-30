@@ -23,7 +23,11 @@ const Resume = () => (
 	>
 		<Grid container justify="center">
 			<ScrollAnimation animateOnce animateIn="bounceInDown">
-				<Typography variant="display2" className="text-center">
+				<Typography
+					variant="display2"
+					className="text-center"
+					component="div"
+				>
 					R&#233;sum&#233;
 				</Typography>
 			</ScrollAnimation>
@@ -31,7 +35,7 @@ const Resume = () => (
 		<Grid container justify="center">
 			<ScrollAnimation animateOnce animateIn="bounceInDown">
 				<Button
-					variant="flat"
+					variant="text"
 					href="https://docs.google.com/document/d/1sSrzCyaX1cOhHndrKpnWjS5U9VkeYyx-MiNzq2Ej_VI/edit?usp=sharing"
 				>
 					<Icon>get_app</Icon>
@@ -48,28 +52,24 @@ const Resume = () => (
 			</Grid>
 			<Grid item lg={8} style={{ padding: 20 }}>
 				<ScrollAnimation animateOnce animateIn="bounceInRight">
-					{jobExp.map(job => {
-						return (
-							<ExpSection
-								key={job.start}
-								title={job.title}
-								iconType="work"
-								description={job.description
-									.split('\n')
-									.map((i, idx) => {
-										return (
-											<div key={idx}>
-												{i}
-												<br />
-											</div>
-										);
-									})}
-								company={job.company}
-								start={job.start}
-								end={job.end}
-							/>
-						);
-					})}
+					{jobExp.map(job => (
+						<ExpSection
+							key={job.start}
+							title={job.title}
+							iconType="work"
+							description={job.description
+								.split('\n')
+								.map((i, idx) => (
+									<div key={idx}>
+										{i}
+										<br />
+									</div>
+								))}
+							company={job.company}
+							start={job.start}
+							end={job.end}
+						/>
+					))}
 					<Divider />
 				</ScrollAnimation>
 			</Grid>
@@ -82,25 +82,23 @@ const Resume = () => (
 			</Grid>
 			<Grid item lg={8} style={{ padding: 20 }}>
 				<ScrollAnimation animateOnce animateIn="bounceInRight">
-					{eduExp.map(school => {
-						return (
-							<EduSection
-								key={school.start}
-								title={school.title}
-								description={school.description
-									.split('\n')
-									.map((i, idx) => {
-										return <span key={idx}>{i}</span>;
-									})}
-								academics={school.academics}
-								company={school.name}
-								awards={school.awards}
-								activities={school.activities}
-								start={school.start}
-								end={school.end}
-							/>
-						);
-					})}
+					{eduExp.map(school => (
+						<EduSection
+							key={school.start}
+							title={school.title}
+							description={school.description
+								.split('\n')
+								.map((i, idx) => {
+									return <span key={idx}>{i}</span>;
+								})}
+							academics={school.academics}
+							company={school.name}
+							awards={school.awards}
+							activities={school.activities}
+							start={school.start}
+							end={school.end}
+						/>
+					))}
 				</ScrollAnimation>
 			</Grid>
 		</Grid>
