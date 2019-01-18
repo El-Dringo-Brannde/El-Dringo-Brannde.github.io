@@ -3,7 +3,6 @@ import React from 'react';
 import NavBar from './components/nav/bar';
 
 import './globals.css';
-import 'mdbreact/dist/css/mdb.css';
 
 import HomePage from './pages/home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';

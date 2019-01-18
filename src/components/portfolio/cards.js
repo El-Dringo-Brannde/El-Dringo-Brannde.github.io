@@ -101,9 +101,6 @@ class PortfolioCards extends React.Component {
 											}}
 										/>
 									))}
-									<br />
-									<br />
-									<br />
 									<Button href={this.props.link}>
 										<i className="fab fa-github fa-lg" />
 										&nbsp;View on Github
@@ -113,9 +110,6 @@ class PortfolioCards extends React.Component {
 						</Card>
 					</div>
 				</ScrollAnimation>
-				<br />
-				<br />
-				<br />
 			</Grid>
 		);
 	}

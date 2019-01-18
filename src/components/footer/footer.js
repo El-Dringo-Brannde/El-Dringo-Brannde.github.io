@@ -19,14 +19,16 @@ const Foot = () => (
 		className="contact-me"
 		noMargin
 	>
-		<Grid container justify="center">
-			<ScrollAnimation animateOnce animateIn="bounceInDown">
-				<Typography variant="display2" className="text-center">
-					Contact Me
+		<ScrollAnimation animateOnce animateIn="bounceInDown">
+			<Grid container justify="center">
+				<Typography   variant="display2"
+					className="text-center"
+					component="div">
+						Contact Me
 				</Typography>
 				<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />
-			</ScrollAnimation>
-		</Grid>
+			</Grid>
+		</ScrollAnimation>
 		<Grid container justify="center" style={{ marginBottom: '5vh' }}>
 			<Grid item lg={3} style={{ margin: '25px 35px', maxWidth: '70vw' }}>
 				<ScrollAnimation animateOnce animateIn="bounceInLeft">
