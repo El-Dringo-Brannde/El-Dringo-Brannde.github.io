@@ -40,14 +40,13 @@ const AboutMe = () => (
 						</Card>
 					</ScrollAnimation>
 				</Grid>
-				<Grid
-					item
-					xl={3}
-					style={{ margin: 25 }}
-					className="text-center"
-				>
+				<Grid item xl={3} style={{ margin: 25 }}>
 					<ScrollAnimation animateOnce animateIn="bounceInUp">
-						<Typography variant="display1" style={{ marginTop: 0 }}>
+						<Typography
+							variant="h4"
+							className="center-text"
+							style={{ marginTop: 0 }}
+						>
 							Skills
 						</Typography>
 						{Skills.map(skill => (

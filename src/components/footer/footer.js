@@ -21,10 +21,12 @@ const Foot = () => (
 	>
 		<ScrollAnimation animateOnce animateIn="bounceInDown">
 			<Grid container justify="center">
-				<Typography   variant="display2"
-					className="text-center"
-					component="div">
-						Contact Me
+				<Typography
+					variant="display2"
+					className="center-text"
+					component="div"
+				>
+					Contact Me
 				</Typography>
 				<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />
 			</Grid>
@@ -46,22 +48,34 @@ const Foot = () => (
 					</Typography>
 
 					<ButtonPadding>
-						<i className="fas fa-phone fa-lg p-1" />
+						<i
+							className="fas fa-phone fa-lg"
+							style={{ marginRight: 5 }}
+						/>
 						541 510 5034
 					</ButtonPadding>
 
 					<ButtonPadding href="mailto:Brandondring31@gmail.com?Subject=Github%20Portfolio">
-						<i className="fas fa-envelope fa-lg p-1" />
+						<i
+							className="fas fa-envelope fa-lg "
+							style={{ marginRight: 5 }}
+						/>
 						Email
 					</ButtonPadding>
 
 					<ButtonPadding href="https://www.linkedin.com/in/brandon-dring/">
-						<i className="fab fa-linkedin fa-lg p-1" />
+						<i
+							className="fab fa-linkedin fa-lg "
+							style={{ marginRight: 5 }}
+						/>
 						Linked In
 					</ButtonPadding>
 
 					<ButtonPadding href="https://github.com/El-Dringo-Brannde">
-						<i className="fab fa-github fa-lg p-1" />
+						<i
+							className="fab fa-github fa-lg "
+							style={{ marginRight: 5 }}
+						/>
 						Github
 					</ButtonPadding>
 				</ScrollAnimation>

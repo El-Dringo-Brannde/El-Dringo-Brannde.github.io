@@ -6,7 +6,10 @@ import Typography from '@material-ui/core/Typography';
 
 const SkillRating = props => (
 	<React.Fragment>
-		<Typography variant="body2"> {props.skill}</Typography>
+		<Typography variant="body2" className="center-text">
+			{' '}
+			{props.skill}
+		</Typography>
 		<Rating
 			emptySymbol={
 				<div

@@ -20,14 +20,14 @@ const Portfolio = () => (
 		className="portfolio"
 		style={{ paddingBottom: 100 }}
 	>
-		<Grid container justify="center">
-			<ScrollAnimation animateOnce animateIn="bounceInUp">
+		<ScrollAnimation animateOnce animateIn="bounceInUp">
+			<Grid container justify="center">
 				<Typography variant="display2" className="text-center">
 					Portfolio
 				</Typography>
 				<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />
-			</ScrollAnimation>
-		</Grid>
+			</Grid>
+		</ScrollAnimation>
 		<Grid container justify="center" style={{ marginBottom: '5vh' }}>
 			{projects.map((element, idx) => {
 				return (

@@ -45,7 +45,7 @@ const Intro = () => (
 					<br />I design &amp; build..
 					<Typing speed={150}>
 						{skills.map((el, idx) => (
-							<React.Fragment>
+							<React.Fragment key={idx}>
 								{el}
 								<Typing.Delay ms={1000} />
 								<Typing.Backspace count={el.length} />
