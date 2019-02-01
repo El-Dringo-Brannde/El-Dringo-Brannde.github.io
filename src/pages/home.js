@@ -11,28 +11,26 @@ import OSSContributions from '../components/OSS/work';
 
 const HomePage = () => {
 	return (
-		<React.Fragment>
-			<ParallaxProvider>
-				<Parallax>
-					<Intro />
-				</Parallax>
-				<Parallax>
-					<AboutMe> </AboutMe>
-				</Parallax>
-				<Parallax>
-					<Resume />
-				</Parallax>
-				<Parallax>
-					<Portfolio />
-				</Parallax>
-				<Parallax>
-					<OSSContributions />
-				</Parallax>
-				<Parallax>
-					<Foot />
-				</Parallax>
-			</ParallaxProvider>
-		</React.Fragment>
+		<ParallaxProvider>
+			<Parallax>
+				<Intro />
+			</Parallax>
+			<Parallax>
+				<AboutMe> </AboutMe>
+			</Parallax>
+			<Parallax>
+				<Resume />
+			</Parallax>
+			<Parallax>
+				<Portfolio />
+			</Parallax>
+			<Parallax>
+				<OSSContributions />
+			</Parallax>
+			<Parallax>
+				<Foot />
+			</Parallax>
+		</ParallaxProvider>
 	);
 };
 

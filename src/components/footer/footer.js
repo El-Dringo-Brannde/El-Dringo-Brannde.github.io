@@ -26,78 +26,112 @@ const Foot = () => (
 					className="center-text"
 					component="div"
 				>
-					Contact Me
-				</Typography>
-				<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />
-			</Grid>
-		</ScrollAnimation>
-		<Grid container justify="center" style={{ marginBottom: '5vh' }}>
-			<Grid item lg={3} style={{ margin: '25px 35px', maxWidth: '70vw' }}>
+					Contact Me{' '}
+				</Typography>{' '}
+				<Divider
+					style={{
+						margin: '5vh 15vw',
+						width: '70vw'
+					}}
+				/>{' '}
+			</Grid>{' '}
+		</ScrollAnimation>{' '}
+		<Grid
+			container
+			justify="center"
+			style={{
+				marginBottom: '5vh'
+			}}
+		>
+			<Grid
+				item
+				lg={3}
+				style={{
+					margin: '25px 35px',
+					maxWidth: '70vw'
+				}}
+			>
 				<ScrollAnimation animateOnce animateIn="bounceInLeft">
-					<Typography variant="body2" style={{ fontSize: '1rem' }}>
-						I'd love to answer any questions you may have about my
+					<Typography
+						variant="body2"
+						style={{
+							fontSize: '1rem'
+						}}
+					>
+						I 'd love to answer any questions you may have about my
 						availability, skills, any of the work I have done, or
-						just to get to know me better.
-					</Typography>
+						just to get to know me better.{' '}
+					</Typography>{' '}
 					<br />
-					<Typography variant="body2" style={{ fontSize: '1rem' }}>
+					<Typography
+						variant="body2"
+						style={{
+							fontSize: '1rem'
+						}}
+					>
 						Please feel free to contact me through any of the
 						methods below, or take a look at some more work of mine
-						as well, check back regularly because I'm always
-						building or learning something cool.
+						as well, check back regularly because I 'm always
+						building or learning something cool.{' '}
 					</Typography>
-
-					<ButtonPadding>
-						<i
-							className="fas fa-phone fa-lg"
-							style={{ marginRight: 5 }}
-						/>
-						541 510 5034
-					</ButtonPadding>
-
 					<ButtonPadding href="mailto:Brandondring31@gmail.com?Subject=Github%20Portfolio">
 						<i
 							className="fas fa-envelope fa-lg "
-							style={{ marginRight: 5 }}
+							style={{
+								marginRight: 5
+							}}
 						/>
-						Email
+						Email{' '}
 					</ButtonPadding>
-
 					<ButtonPadding href="https://www.linkedin.com/in/brandon-dring/">
 						<i
 							className="fab fa-linkedin fa-lg "
-							style={{ marginRight: 5 }}
+							style={{
+								marginRight: 5
+							}}
 						/>
-						Linked In
+						Linked In{' '}
 					</ButtonPadding>
-
 					<ButtonPadding href="https://github.com/El-Dringo-Brannde">
 						<i
 							className="fab fa-github fa-lg "
-							style={{ marginRight: 5 }}
+							style={{
+								marginRight: 5
+							}}
 						/>
-						Github
-					</ButtonPadding>
-				</ScrollAnimation>
-			</Grid>
-			<Grid item lg={3} style={{ margin: '25px 35px', maxWidth: '40vw' }}>
+						Github{' '}
+					</ButtonPadding>{' '}
+				</ScrollAnimation>{' '}
+			</Grid>{' '}
+			<Grid
+				item
+				lg={3}
+				style={{
+					margin: '25px 35px',
+					maxWidth: '40vw'
+				}}
+			>
 				<ScrollAnimation animateOnce animateIn="bounceInRight">
 					<Card raised>
 						<img
 							src={process.env.PUBLIC_URL + '/DirtbikePhoto.jpg'}
 							className="contact-photo"
 						/>
-					</Card>
-				</ScrollAnimation>
-			</Grid>
-		</Grid>
-		<footer style={{ background: '#00B0FF' }}>
+					</Card>{' '}
+				</ScrollAnimation>{' '}
+			</Grid>{' '}
+		</Grid>{' '}
+		<footer
+			style={{
+				background: '#00B0FF'
+			}}
+		>
 			<Grid container justify="center">
 				<Grid item>
-					<div>Made with ❤️ in Portland by Brandon</div>
-				</Grid>
-			</Grid>
-		</footer>
+					<div> Made with❤️ in Portland by Brandon </div>{' '}
+				</Grid>{' '}
+			</Grid>{' '}
+		</footer>{' '}
 	</SkewedContainer>
 );
 
