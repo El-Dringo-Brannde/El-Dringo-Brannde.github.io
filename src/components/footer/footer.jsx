@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
-import ButtonPadding from './buttons';
+import Button from '@material-ui/core/Button';
 
 import './footer.css';
 
@@ -66,7 +66,8 @@ const Foot = () => (
 					<Typography
 						variant="body2"
 						style={{
-							fontSize: '1rem'
+							fontSize: '1rem',
+							marginBottom: 50
 						}}
 					>
 						Please feel free to contact me through any of the
@@ -74,34 +75,36 @@ const Foot = () => (
 						as well, check back regularly because I 'm always
 						building or learning something cool.{' '}
 					</Typography>
-					<ButtonPadding href="mailto:Brandondring31@gmail.com?Subject=Github%20Portfolio">
-						<i
-							className="fas fa-envelope fa-lg "
-							style={{
-								marginRight: 5
-							}}
-						/>
-						Email{' '}
-					</ButtonPadding>
-					<ButtonPadding href="https://www.linkedin.com/in/brandon-dring/">
-						<i
-							className="fab fa-linkedin fa-lg "
-							style={{
-								marginRight: 5
-							}}
-						/>
-						Linked In{' '}
-					</ButtonPadding>
-					<ButtonPadding href="https://github.com/El-Dringo-Brannde">
-						<i
-							className="fab fa-github fa-lg "
-							style={{
-								marginRight: 5
-							}}
-						/>
-						Github{' '}
-					</ButtonPadding>{' '}
-				</ScrollAnimation>{' '}
+					<Grid container justify="center">
+						<Button href="mailto:Brandondring31@gmail.com?Subject=Github%20Portfolio">
+							<i
+								className="fas fa-envelope fa-lg "
+								style={{
+									marginRight: 5
+								}}
+							/>
+							Email{' '}
+						</Button>
+						<Button href="https://www.linkedin.com/in/brandon-dring/">
+							<i
+								className="fab fa-linkedin fa-lg "
+								style={{
+									marginRight: 5
+								}}
+							/>
+							Linked In{' '}
+						</Button>
+						<Button href="https://github.com/El-Dringo-Brannde">
+							<i
+								className="fab fa-github fa-lg "
+								style={{
+									marginRight: 5
+								}}
+							/>
+							Github
+						</Button>
+					</Grid>
+				</ScrollAnimation>
 			</Grid>{' '}
 			<Grid
 				item

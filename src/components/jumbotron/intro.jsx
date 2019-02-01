@@ -7,7 +7,7 @@ import Typing from 'react-typing-animation';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-import { images, skills } from './carousel';
+import { images, skills } from '../../config/carousel';
 import './intro.css';
 
 const settings = {

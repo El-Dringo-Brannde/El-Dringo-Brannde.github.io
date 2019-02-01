@@ -7,7 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
-import projects from './projects';
+import projects from '../../config/projects';
 import PortfolioCards from './cards';
 
 import './portfolio.css';

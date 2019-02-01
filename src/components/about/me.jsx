@@ -4,8 +4,8 @@ import SkewedContainer from 'sc-react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import SkillRating from './ratings';
-import Skills from './skills';
-import bio from './bio';
+import Skills from '../../config/skills';
+import bio from '../../config/bio';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';

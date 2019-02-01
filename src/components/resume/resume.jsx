@@ -3,8 +3,8 @@ import SkewedContainer from 'sc-react';
 
 import ExpSection from './expSection';
 import EduSection from './eduSection';
-import jobExp from './jobExp';
-import eduExp from './eduExp';
+import jobExp from '../../config/jobExp';
+import eduExp from '../../config/eduExp';
 
 import Grid from '@material-ui/core/Grid';
 import Icon from '@material-ui/core/Icon';
