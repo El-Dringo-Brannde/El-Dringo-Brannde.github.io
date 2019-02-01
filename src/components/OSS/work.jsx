@@ -31,33 +31,40 @@ const OSSContributions = () => (
 		</ScrollAnimation>
 
 		<Grid container justify="center">
-			{contributions.map(contribution => (
-				<Grid item style={{ margin: 15 }}>
-					<Card style={{ maxWidth: '30vh' }}>
-						<CardContent>
-							<Typography variant="h5">
-								{contribution.project}
-							</Typography>
-							<Typography variant="body1">
-								{contribution.author}
-							</Typography>
-							<Divider style={{ margin: 10 }} />
-							<Typography>{contribution.description}</Typography>
-						</CardContent>
-						<CardActions>
-							<Grid container justify="center">
-								<Button
-									onClick={() =>
-										window.open(contribution.link, '_blank')
-									}
-									size="small"
-								>
-									View on Github
-								</Button>
-							</Grid>
-						</CardActions>
-					</Card>
-				</Grid>
+			{contributions.map((contribution, idx) => (
+				<ScrollAnimation animateOnce animateIn={contribution.bounce}>
+					<Grid item style={{ margin: 15 }} key={idx}>
+						<Card style={{ maxWidth: '30vh' }}>
+							<CardContent>
+								<Typography variant="h5">
+									{contribution.project}
+								</Typography>
+								<Typography variant="body1">
+									{contribution.author}
+								</Typography>
+								<Divider style={{ margin: 10 }} />
+								<Typography>
+									{contribution.description}
+								</Typography>
+							</CardContent>
+							<CardActions>
+								<Grid container justify="center">
+									<Button
+										onClick={() =>
+											window.open(
+												contribution.link,
+												'_blank'
+											)
+										}
+										size="small"
+									>
+										View on Github
+									</Button>
+								</Grid>
+							</CardActions>
+						</Card>
+					</Grid>
+				</ScrollAnimation>
 			))}
 		</Grid>
 	</SkewedContainer>

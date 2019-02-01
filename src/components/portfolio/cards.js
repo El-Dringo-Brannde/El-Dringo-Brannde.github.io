@@ -87,11 +87,15 @@ class PortfolioCards extends React.Component {
 								</Typography>
 								<Typography
 									variant="body2"
+									component="div"
 									style={{ background: '#edeae1' }}
 									className="portfolio-item-description"
 								>
 									Tech Used.
-									<Divider style={{ marginBottom: '5px' }} />
+									<Divider
+										component="div"
+										style={{ marginBottom: '5px' }}
+									/>
 									{this.props.tech.map((el, idx) => (
 										<i
 											key={el}

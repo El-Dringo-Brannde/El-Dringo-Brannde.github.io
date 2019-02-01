@@ -60,10 +60,10 @@ const Resume = () => (
 							description={job.description
 								.split('\n')
 								.map((i, idx) => (
-									<div key={idx}>
+									<p key={idx}>
 										{i}
 										<br />
-									</div>
+									</p>
 								))}
 							company={job.company}
 							start={job.start}
