@@ -14,7 +14,7 @@ import './footer.css';
 
 const Foot = () => (
 	<SkewedContainer
-		top="right"
+		top="left"
 		bgColor="#E64A19"
 		className="contact-me"
 		noMargin

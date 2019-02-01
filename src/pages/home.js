@@ -7,6 +7,7 @@ import AboutMe from './../components/about/me';
 import Resume from './../components/resume/resume';
 import Portfolio from './../components/portfolio/portfolio';
 import Foot from './../components/footer/footer';
+import OSSContributions from '../components/OSS/work';
 
 const HomePage = () => {
 	return (
@@ -23,6 +24,9 @@ const HomePage = () => {
 				</Parallax>
 				<Parallax>
 					<Portfolio />
+				</Parallax>
+				<Parallax>
+					<OSSContributions />
 				</Parallax>
 				<Parallax>
 					<Foot />

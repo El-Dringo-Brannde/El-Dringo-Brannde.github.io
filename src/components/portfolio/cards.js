@@ -87,6 +87,7 @@ class PortfolioCards extends React.Component {
 								</Typography>
 								<Typography
 									variant="body2"
+									style={{ background: '#edeae1'}}
 									className="portfolio-item-description"
 								>
 									Tech Used.
