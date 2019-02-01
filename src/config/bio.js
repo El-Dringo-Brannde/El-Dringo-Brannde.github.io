@@ -13,10 +13,10 @@ const bio = [
 	the company.`,
 	//current
 
-	`Right now I'm still exploring hobbies outside of school. 
-	Lately I have taken up running, cycling, and lifting on a near daily basis.
-	I have also started getting back into video games again. If the work 
-	day has been easy, I usually try and dabble in mobile development, or Mac development.`
+	`In my free time, I try to focus things outside of coding. 
+   Lately I have been teaching myself piano, reading, drawing, going to Toastmasters or 
+   Brazilian Jiu Jitsu. If the mood takes me I usually try to dabble in projects that 
+   require Machine Learning/AI or mobile development.`
 	// hobbies
 ];
 

@@ -9,16 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { images, skills } from '../../config/carousel';
 import './intro.css';
-
-const settings = {
-	dots: false,
-	arrows: false,
-	infinite: true,
-	autoplay: true,
-	autoplaySpeed: 8000,
-	speed: 2000,
-	pauseOnHover: false
-};
+import settings from './settings';
 
 const Intro = () => (
 	<SkewedContainer bottom="right" className="intro" noMargin>
