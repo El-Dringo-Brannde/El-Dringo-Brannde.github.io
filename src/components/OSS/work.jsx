@@ -32,9 +32,13 @@ const OSSContributions = () => (
 
 		<Grid container justify="center">
 			{contributions.map((contribution, idx) => (
-				<ScrollAnimation animateOnce animateIn={contribution.bounce}>
+				<ScrollAnimation
+					animateOnce
+					animateIn={contribution.bounce}
+					key={idx}
+				>
 					<Grid item style={{ margin: 15 }} key={idx}>
-						<Card style={{ maxWidth: '30vh' }}>
+						<Card style={{ maxWidth: '30vh' }} raised={true}>
 							<CardContent>
 								<Typography variant="h5">
 									{contribution.project}

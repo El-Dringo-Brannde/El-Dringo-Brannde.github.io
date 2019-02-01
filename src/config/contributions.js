@@ -39,6 +39,23 @@ const contributions = [
 			"Created the Github contributing template for PR's and issues",
 
 		link: 'https://github.com/nelsonni/bonsai'
+	},
+	{
+		project: 'Gimme-AWS-Creds',
+		author: 'Nike Inc.',
+		bounce: 'bounceInLeft',
+		description:
+			"Fixed bug that wasn't allowing users to create multiple profiles for an AWS account",
+
+		link: 'https://github.com/Nike-Inc/gimme-aws-creds/pull/103'
+	},
+	{
+		project: 'Gimme-AWS-Creds',
+		author: 'Nike Inc.',
+		bounce: 'bounceInLeft',
+		description:
+			'Created feature that allows users to see all the profiles that they have created with Okta.',
+		link: 'https://github.com/Nike-Inc/gimme-aws-creds/pull/104'
 	}
 ];
 
