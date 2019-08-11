@@ -1,5 +1,25 @@
 const projects = [
 	{
+		title: 'Perfected-Prototypes',
+		image: '/perfected-prototypes.png',
+		description:
+			'An NPM package extension to the Javascript Object, Array, and String prototype chain. Extending the limited functionality to what it should have been the first time around. ',
+		tech: [
+			'devicon-javascript-plain colored'
+		],
+		link: 'https://github.com/El-Dringo-Brannde/Perfected-Prototypes'
+	},
+	{
+		title: 'Middlemen',
+		image: '/Middlemen.png',
+		description:
+			'A dead simple middleware solution for Azure Functions, similar to express, & hapiJS',
+		tech: [
+			'devicon-typescript-plain colored'
+		],
+		link: 'https://github.com/El-Dringo-Brannde/Middlemen'
+	},
+	{
 		title: 'LunchBox',
 		image: '/LunchBoxBanner.png',
 		description:

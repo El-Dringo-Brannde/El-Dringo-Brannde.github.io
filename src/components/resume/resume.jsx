@@ -36,7 +36,7 @@ const Resume = () => (
 			<ScrollAnimation animateOnce animateIn="bounceInDown">
 				<Button
 					variant="text"
-					href="https://docs.google.com/document/d/1sSrzCyaX1cOhHndrKpnWjS5U9VkeYyx-MiNzq2Ej_VI/edit?usp=sharing"
+					href="https://github.com/El-Dringo-Brannde/Resume/blob/master/Resume.pdf"
 				>
 					<Icon>get_app</Icon>
 					Download

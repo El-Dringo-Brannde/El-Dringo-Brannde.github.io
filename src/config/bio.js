@@ -9,7 +9,7 @@ const bio = [
 
 	`Currently I work at Nike Inc. Technology, in Hillsboro, Oregon. 
 	At Nike I am currently working in the Cloud Automation within
-	their CIS division and work on automating processes within
+	their CIS division and work on automating internal processes within
 	the company.`,
 	//current
 

@@ -72,8 +72,7 @@ const Foot = () => (
 					>
 						Please feel free to contact me through any of the
 						methods below, or take a look at some more work of mine
-						as well, check back regularly because I 'm always
-						building or learning something cool.{' '}
+						as well.{' '}
 					</Typography>
 					<Grid container justify="center">
 						<Button href="mailto:Brandondring31@gmail.com?Subject=Github%20Portfolio">
@@ -131,7 +130,7 @@ const Foot = () => (
 		>
 			<Grid container justify="center">
 				<Grid item>
-					<div> Made with❤️ in Portland by Brandon </div>{' '}
+					<div> Made with❤️ in Portland </div>{' '}
 				</Grid>{' '}
 			</Grid>{' '}
 		</footer>{' '}

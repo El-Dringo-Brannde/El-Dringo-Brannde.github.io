@@ -1,8 +1,9 @@
 const jobExp = [
 	{
 		title: 'Rotational Engineer',
-		description: `Member of the cloud automation team within Corporate Information Security (CIS). \n
-		Redesigned AWS metadata database, automated workflows that kept scan engines up to date, and scheduled processes to make sure backups are always current and deleted on time. Currently working on creating a Slackbot frame work to be able to enable Chat Ops within Nike. `,
+		description: `Engineer of the cloud automation team within Corporate Information Security (CIS). \n
+		Redesigned AWS metadata database, automated workflows that kept scan engines up to date, and scheduled processes to make sure backups are always current and deleted on time. Created a Slackbot framework to be able to enable Chat Ops within Nike. Audited Employee Termination and revoked access to terminated people. 
+		\n Engineer on the Digital Explore team, created new methods of make and manufacturing for Nike Apparel and footwear.`,
 		company: 'Nike Inc.',
 		start: '09/04/18',
 		end: 'Present'

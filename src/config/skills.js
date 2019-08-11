@@ -1,10 +1,10 @@
 const Skills = [
 	{
-		name: 'Node.JS',
+		name: 'Backend Dev (Node.JS)',
 		rating: 4
 	},
 	{
-		name: 'Web Dev (HTML, SCSS, React, Angular(s))',
+		name: 'Front End Dev (React, Angular(s))',
 		rating: 4
 	},
 	{
@@ -24,7 +24,7 @@ const Skills = [
 		rating: 3
 	},
 	{
-		name: 'Virtual Reality (Unreal Engine & Unity)',
+		name: 'Azure',
 		rating: 2.5
 	}
 ];

@@ -56,6 +56,12 @@ const contributions = [
 		description:
 			'Created feature that allows users to see all the profiles that they have created with Okta.',
 		link: 'https://github.com/Nike-Inc/gimme-aws-creds/pull/104'
+	},{
+		project: 'Middlemen', 
+		description: 'Created NPM package where you can add middleware to your Azure functions, taking care of token validation, input validation, etc. prior to business logic.',
+		bounce: 'bounceInLeft',
+		language: ['Typescript'], 
+		link: 'https://github.com/El-Dringo-Brannde/Middlemen'
 	}
 ];
 

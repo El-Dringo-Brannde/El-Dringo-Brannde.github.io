@@ -1,7 +1,7 @@
 const eduExp = [
 	{
 		title: 'B.S - Computer Science',
-		academics: '3.85/4.0 GPA',
+		academics: '3.85 GPA',
 		name: 'Oregon State University',
 		description:
 			'Focus in Human Computer Interaction & UX Design. To compliment a focus in full stack engineering, mobile and cloud development.',
@@ -13,7 +13,7 @@ const eduExp = [
 	},
 	{
 		title: 'Associates Transfer',
-		academics: '3.83/4.0 GPA',
+		academics: '3.83 GPA',
 		name: 'Portland Community College',
 		description:
 			'Bounced around majors coming out of high school, all the way from Nursing, to Paramedic school. Ended up being introduced to computers in an intro course.',
