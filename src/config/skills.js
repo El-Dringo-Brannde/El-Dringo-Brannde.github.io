@@ -8,7 +8,11 @@ const Skills = [
 		rating: 4
 	},
 	{
-		name: 'Desktop Apps (Electron & Node.JS)',
+		name: 'Python (Flask, Django, Bottle, SciPy, Numpy)',
+		rating: 4
+	},
+	{
+		name: 'Automation',
 		rating: 3.5
 	},
 	{
@@ -16,16 +20,12 @@ const Skills = [
 		rating: 3.5
 	},
 	{
-		name: 'Python (Flask, Django, Bottle, SciPy, Numpy)',
+		name: 'Azure (App service, IAM, ARM)',
 		rating: 3.5
 	},
 	{
-		name: 'Mobile Apps (Cordova, Ionic, & React Native)',
+		name: 'DevOps',
 		rating: 3
-	},
-	{
-		name: 'Azure',
-		rating: 2.5
 	}
 ];
 

@@ -8,13 +8,13 @@ const bio = [
 	//background
 
 	`Currently I work at Nike Inc. Technology, in Hillsboro, Oregon. 
-	At Nike I am currently working in the Cloud Automation within
-	their CIS division and work on automating internal processes within
-	the company.`,
+	I work on the Azure Engineering team within Tech Ops, helping manage Nike's Azure infrastructure 
+	globally. Specifically, I have been working on automating how firewall changes are 
+	made throughout the enterprise. `,
 	//current
 
 	`In my free time, I try to focus things outside of coding. 
-   Lately I have been teaching myself piano, reading, drawing, going to Toastmasters or 
+   Lately I have been teaching myself piano, reading, drawing, or 
    Brazilian Jiu Jitsu. If the mood takes me I usually try to dabble in projects that 
    require Machine Learning/AI or mobile development.`
 	// hobbies

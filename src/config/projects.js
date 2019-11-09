@@ -1,12 +1,23 @@
 const projects = [
 	{
+		title: 'PredictionStrike',
+		image: '/predictionstrike.png',
+		description:
+			'A sports betting website that has transacted over $300k where we see athletes like stocks and adjust their price with their in-game performance.',
+		tech: [
+			'devicon-javascript-plain colored',
+			'devicon-nodejs-plain colored',
+			'devicon-react-original-wordmark colored',
+			'devicon-python-plain-wordmark colored'
+		],
+		link: 'https://predictionstrike.com'
+	},
+	{
 		title: 'Perfected-Prototypes',
 		image: '/perfected-prototypes.png',
 		description:
 			'An NPM package extension to the Javascript Object, Array, and String prototype chain. Extending the limited functionality to what it should have been the first time around. ',
-		tech: [
-			'devicon-javascript-plain colored'
-		],
+		tech: ['devicon-javascript-plain colored'],
 		link: 'https://github.com/El-Dringo-Brannde/Perfected-Prototypes'
 	},
 	{
@@ -14,9 +25,7 @@ const projects = [
 		image: '/Middlemen.png',
 		description:
 			'A dead simple middleware solution for Azure Functions, similar to express, & hapiJS',
-		tech: [
-			'devicon-typescript-plain colored'
-		],
+		tech: ['devicon-typescript-plain colored'],
 		link: 'https://github.com/El-Dringo-Brannde/Middlemen'
 	},
 	{

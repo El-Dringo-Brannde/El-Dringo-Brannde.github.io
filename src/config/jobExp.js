@@ -1,12 +1,30 @@
 const jobExp = [
 	{
-		title: 'Rotational Engineer',
-		description: `Engineer of the cloud automation team within Corporate Information Security (CIS). \n
-		Redesigned AWS metadata database, automated workflows that kept scan engines up to date, and scheduled processes to make sure backups are always current and deleted on time. Created a Slackbot framework to be able to enable Chat Ops within Nike. Audited Employee Termination and revoked access to terminated people. 
-		\n Engineer on the Digital Explore team, created new methods of make and manufacturing for Nike Apparel and footwear.`,
+		title: 'Cloud Engineer',
+		description: `Currently designing a manageable way to edit & deploy network firewall rules. Using an infrastructure as code, rules are viewable to the entire organization, and automatically deployed upon changes. 
+		\n
+		Saving the Nike network team endless man hours processing tickets for firewall exceptions, this allows engineers to submit a pull request to make the exact change they need.`,
+		company: 'Nike Inc.',
+		start: '09/04/19',
+		end: 'Present'
+	},
+	{
+		title: 'Full Stack Engineer',
+		description: `Developed an automated process of taking designer artwork and making it print ready. Meeting the exact specifications of the printer, saving about four hours of labor for each design that gets created. The project has since been picked up and being used by the Nike By You (Nike iD) team. 
+		\n
+		Designed & implemented a ReactJS/Mobx website to create a new classified method of making shoes. The website served as a front end to program a manufacturing machine, that used a custom file format. While at the same time abstracting all the technicalities so that more Nike engineers can use the machine.`,
+		company: 'Nike Inc.',
+		start: '03/04/19',
+		end: '09/04/19'
+	},
+	{
+		title: 'Automation Engineer',
+		description: ` Audited the termination process of Nike Employees, automating a full days worth of work into a minute long Python script. This ensured that Nike employees that had been terminated, had their access revoked in a single day from up to a month to prevent access from any potentially disgruntled employees. 
+		\n
+		Automated how Corporate Information Security blacklists/whitelists IP addresses. Unifying to a single source of truth of what IP address ranges are safe or not, making it both easily accessible and maintainable.`,
 		company: 'Nike Inc.',
 		start: '09/04/18',
-		end: 'Present'
+		end: '03/04/19'
 	},
 	{
 		title: 'Software Development Intern',
