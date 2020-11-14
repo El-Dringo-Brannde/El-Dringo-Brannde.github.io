@@ -7,15 +7,10 @@ import SkillRating from './ratings';
 import Skills from '../../config/skills';
 import bio from '../../config/bio';
 
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Grid from '@material-ui/core/Grid';
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
+import {Card, CardContent, Grid, Divider, Typography, IconButton} from '@material-ui/core';
 
 const AboutMe = () => (
-	<React.Fragment>
+	<>
 		<SkewedContainer
 			top="left"
 			bottom="left"
@@ -26,7 +21,7 @@ const AboutMe = () => (
 		>
 			<Grid container justify="center">
 				<ScrollAnimation animateOnce animateIn="bounceInDown">
-					<Typography variant="display2" className="text-center">
+					<Typography variant="h1" className="text-center">
 						About Me
 					</Typography>
 				</ScrollAnimation>
@@ -98,6 +93,6 @@ const AboutMe = () => (
 				</Grid>
 			</Grid>
 		</SkewedContainer>
-	</React.Fragment>
+	</>
 );
 export default AboutMe;

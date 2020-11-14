@@ -3,12 +3,7 @@ import SkewedContainer from 'sc-react';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import Card from '@material-ui/core/Card';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-
-import Button from '@material-ui/core/Button';
+import {Card, Grid, Typography, Divider, Button} from '@material-ui/core';
 
 import './footer.css';
 
@@ -22,7 +17,7 @@ const Foot = () => (
 		<ScrollAnimation animateOnce animateIn="bounceInDown">
 			<Grid container justify="center">
 				<Typography
-					variant="display2"
+					variant="h1"
 					className="center-text"
 					component="div"
 				>

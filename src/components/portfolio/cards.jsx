@@ -72,7 +72,7 @@ class PortfolioCards extends React.Component {
 							<CardContent>
 								<Typography
 									gutterBottom
-									variant="headline"
+									variant="h5"
 									component="h2"
 								>
 									{this.props.title}

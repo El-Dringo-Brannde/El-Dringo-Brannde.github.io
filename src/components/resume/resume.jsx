@@ -24,7 +24,7 @@ const Resume = () => (
 		<Grid container justify="center">
 			<ScrollAnimation animateOnce animateIn="bounceInDown">
 				<Typography
-					variant="display2"
+					variant="h1"
 					className="text-center"
 					component="div"
 				>

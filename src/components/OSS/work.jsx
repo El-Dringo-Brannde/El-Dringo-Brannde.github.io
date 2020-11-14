@@ -23,7 +23,7 @@ const OSSContributions = () => (
 	>
 		<ScrollAnimation animateOnce animateIn="bounceInUp">
 			<Grid container justify="center">
-				<Typography variant="display2" className="text-center">
+				<Typography variant="h3" className="text-center">
 					Open Source Contributions
 				</Typography>
 				<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />

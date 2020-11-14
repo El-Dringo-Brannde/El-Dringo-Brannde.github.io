@@ -22,7 +22,7 @@ const Portfolio = () => (
 	>
 		<ScrollAnimation animateOnce animateIn="bounceInUp">
 			<Grid container justify="center">
-				<Typography variant="display2" className="text-center">
+				<Typography variant="h1" className="text-center">
 					Portfolio
 				</Typography>
 				<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />

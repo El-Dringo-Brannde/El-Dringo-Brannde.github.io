@@ -26,7 +26,7 @@ const Intro = () => (
 		>
 			<Grid item>
 				<Typography
-					variant="display2"
+					variant="h2"
 					style={{ color: 'white' }}
 					component="div"
 				>

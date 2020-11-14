@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 const ExpSection = props => (
 	<Grid container>
 		<Grid item xs style={{ padding: 20, maxWidth: '50vw' }}>
-			<Typography variant="headline">{props.title}</Typography>
+			<Typography variant="h3">{props.title}</Typography>
 			<Typography variant="body2" style={{ fontSize: '1em' }}>
 				{' '}
 				{props.description}
