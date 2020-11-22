@@ -5,13 +5,13 @@ terraform {
 
     # The name of the Terraform Cloud workspace to store Terraform state files in.
     workspaces {
-      name = "Portfolio-prod"
+      name = "portfolio-prod"
     }
   }
 }
 
 provider "google" {
-  project                     = "el-dringo-brannde-io"
+  project                     = var.project_id
   impersonate_service_account = var.WORKER
 
 

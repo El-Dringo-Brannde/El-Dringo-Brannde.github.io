@@ -7,6 +7,13 @@ resource "google_cloud_run_service" "portfolio" {
       containers {
         image = "gcr.io/el-dringo-brannde-io/me"
       }
+      service_account_name = var.WORKER
+    }
+  }
+
+  metadata {
+    labels = {
+      tf-automation = true
     }
   }
 
@@ -14,6 +21,12 @@ resource "google_cloud_run_service" "portfolio" {
     percent         = 100
     latest_revision = true
   }
+}
+
+resource "google_project_iam_member" "portfolio_iam" {
+  project = var.project_id
+  role    = "roles/run.admin"
+  member  = "serviceAccount:${var.WORKER}"
 }
 
 resource "google_cloud_run_service_iam_member" "allUsers" {
