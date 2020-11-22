@@ -18,8 +18,8 @@ resource "google_cloud_run_service" "portfolio" {
 
 resource "google_cloud_run_service_iam_member" "allUsers" {
   location = google_cloud_run_service.portfolio.location
-  project = google_cloud_run_service.portfolio.project
-  service = google_cloud_run_service.portfolio.name
-  role = "roles/run.invoker"
-  member = "allUsers"
+  project  = google_cloud_run_service.portfolio.project
+  service  = google_cloud_run_service.portfolio.name
+  role     = "roles/run.invoker"
+  member   = "allUsers"
 }
