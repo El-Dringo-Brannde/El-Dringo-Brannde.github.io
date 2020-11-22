@@ -8,6 +8,7 @@ variable "required_services" {
     default = [
         "run.googleapis.com", 
         "cloudresourcemanager.googleapis.com",
-        "domains.googleapis.com"
+        "domains.googleapis.com",
+        "iam.googleapis.com"
     ]
 }
