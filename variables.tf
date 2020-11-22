@@ -1,6 +1,6 @@
 variable "WORKER" {
-    type = string
-    description = "AUTO POPULATED VIA TF_VAR"
+  type        = string
+  description = "AUTO POPULATED VIA TF_VAR"
 }
 
 variable "project_id" {
@@ -8,10 +8,10 @@ variable "project_id" {
 }
 
 variable "required_services" {
-    default = [
-        "run.googleapis.com", 
-        "cloudresourcemanager.googleapis.com",
-        "domains.googleapis.com",
-        "iam.googleapis.com"
-    ]
+  default = [
+    "run.googleapis.com",
+    "cloudresourcemanager.googleapis.com",
+    "domains.googleapis.com",
+    "iam.googleapis.com"
+  ]
 }

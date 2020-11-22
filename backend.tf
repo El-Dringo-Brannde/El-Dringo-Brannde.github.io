@@ -6,8 +6,8 @@ terraform {
     }
   }
   required_providers {
-	  google = "~>3.48.0"
-	  random = "~>3.0.0"
+    google = "~>3.48.0"
+    random = "~>3.0.0"
   }
 }
 
