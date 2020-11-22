@@ -58,7 +58,6 @@ resource "google_service_account" "cloud_run_service_account" {
 }
 
 resource "google_service_account_iam_member" "auto_gen_acct_iam" {
-  project            = var.project_id
   service_account_id = google_service_account.cloud_run_service_account.name
   role               = "roles/iam.serviceAccountUser"
   member             = "serviceAccount:${var.WORKER}"
