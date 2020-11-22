@@ -8,6 +8,10 @@ terraform {
       name = "portfolio-prod"
     }
   }
+  required_providers {
+	  google = "~>3.48.0"
+	  random = "~>3.0.0"
+  }
 }
 
 provider "google" {
