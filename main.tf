@@ -23,6 +23,14 @@ resource "google_cloud_run_service" "portfolio" {
   }
 }
 
+resource "google_project_service" "required_service" {
+  for_each = toset(var.required_services)
+  project = var.project_id
+  service = each.value
+}
+
+
+
 resource "google_project_iam_member" "portfolio_iam" {
   project = var.project_id
   role    = "roles/run.admin"
