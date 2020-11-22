@@ -41,6 +41,9 @@ resource "google_project_iam_member" "portfolio_iam" {
   project = var.project_id
   role    = "roles/run.admin"
   member  = "serviceAccount:${var.WORKER}"
+  depends_on = [
+    google_project_service.required_service
+  ]
 }
 
 resource "google_service_account" "cloud_run_service_account" {
@@ -48,12 +51,18 @@ resource "google_service_account" "cloud_run_service_account" {
   account_id   = "portfolio-${random_id.suffix.hex}"
   display_name = "Portfolio account."
   description   = "Service account to use with Cloud Run personal Portfolio."
+  depends_on = [
+    google_project_service.required_service
+  ]
 }
 
 resource "google_service_account_iam_member" "auto_gen_acct_iam" {
   service_account_id = google_service_account.cloud_run_service_account.name
   role               = "roles/iam.serviceAccountUser"
   member             = "serviceAccount:${var.WORKER}"
+  depends_on = [
+    google_project_service.required_service
+  ]
 }
 
 
