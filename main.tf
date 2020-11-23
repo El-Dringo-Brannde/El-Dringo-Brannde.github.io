@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "portfolio" {
   template {
     spec {
       containers {
-        image = "gcr.io/el-dringo-brannde-io/me"
+        image = "gcr.io/${var.project_id}/me"
       }
       service_account_name = google_service_account.cloud_run_service_account.email
     }
