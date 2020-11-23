@@ -28,10 +28,12 @@ jobs:
       with:
         # Service account key to use for authentication. This should be the JSON formatted private key which can be exported from the Cloud Console. The value can be raw or base64-encoded.
         service_account_key: ${{ secrets.IDENTITY }}
+    - name: impersonate
+      run: export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-service-account=$WORKER_SA)
         
     - name: Build
       run: |-
-        gcloud builds submit --tag "gcr.io/$PROJECT_ID/me" --project $PROJECT_ID --impersonate-service-account=$WORKER_SA
+        gcloud builds submit --tag "gcr.io/$PROJECT_ID/me" --project $PROJECT_ID
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
