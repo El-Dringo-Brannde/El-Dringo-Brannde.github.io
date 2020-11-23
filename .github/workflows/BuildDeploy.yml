@@ -33,7 +33,7 @@ jobs:
         
     - name: Build
       run: |
-        docker build -t "gcr.io/$PROJECT_ID:latest" .
+        docker build -t "gcr.io/$PROJECT_ID/me:latest" .
 
     - name: Push
       run: |
