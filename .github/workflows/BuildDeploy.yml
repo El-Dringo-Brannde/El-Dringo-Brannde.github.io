@@ -11,13 +11,9 @@ env:
   WORKER_SA: ${{ secrets.WORKER_SA }}
 
 jobs:
-  build-deploy:
-    name: 'Terraform'
+  docker:
+    name: 'Docker'
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        shell: bash
 
     steps:
     - name: Checkout
@@ -27,9 +23,10 @@ jobs:
       uses: google-github-actions/setup-gcloud@v0.2.0
       with:
         service_account_key: ${{ secrets.IDENTITY }}
-    
-    - name: impersonate
-      run: export GOOGLE_APPLICATION_CREDENTIALS=$(gcloud auth print-access-token --impersonate-service-account=$WORKER_SA)
+
+    - name: Configure Docker
+      run: |
+        gcloud auth configure-docker --impersonate-service-account=$WORKER_SA
         
     - name: Build
       run: |
@@ -39,6 +36,19 @@ jobs:
       run: |
         docker push gcr.io/$PROJECT_ID/me:latest
 
+  terraform: 
+    name: 'Terraform'
+    needs: docker
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Set up gcloud Cloud SDK environment
+      uses: google-github-actions/setup-gcloud@v0.2.0
+      with:
+        service_account_key: ${{ secrets.IDENTITY }}
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
