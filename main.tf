@@ -62,7 +62,7 @@ resource "google_service_account_iam_member" "auto_gen_acct_iam" {
   role               = "roles/iam.serviceAccountUser"
   member             = "serviceAccount:${var.WORKER}"
   depends_on = [
-    google_project_service.required_service
+    google_service_account.cloud_run_service_account
   ]
 }
 
