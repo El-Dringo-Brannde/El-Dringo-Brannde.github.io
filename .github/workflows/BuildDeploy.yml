@@ -27,13 +27,13 @@ jobs:
       uses: google-github-actions/setup-gcloud@v0.2.0
       with:
         service_account_key: ${{ secrets.IDENTITY }}
+    
+    - name: impersonate
+      run: export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-service-account=$WORKER_SA)
         
-    - name: Build and push
-      id: docker_build
-      uses: docker/build-push-action@v2
-      with:
-        push: true
-        tags: gcr.io/$PROJECT_ID/me:latest
+    - name: Build
+      run: |
+        docker build -t "gcr.io/$PROJECT_ID:latest 
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
