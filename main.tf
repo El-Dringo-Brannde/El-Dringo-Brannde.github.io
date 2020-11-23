@@ -28,6 +28,19 @@ resource "google_cloud_run_service" "portfolio" {
   ]
 }
 
+resource "google_cloud_run_domain_mapping" "me" {
+  location = "us-central1"
+  name     = "me.eldringobrannde.dev"
+
+  metadata {
+    namespace = var.project_id
+  }
+
+  spec {
+    route_name = google_cloud_run_service.portfolio.name
+  }
+}
+
 resource "random_id" "suffix" {
   byte_length = 4
 }
