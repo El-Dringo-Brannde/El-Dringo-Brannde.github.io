@@ -33,7 +33,7 @@ jobs:
         
     - name: Build
       run: |
-        docker build -t "gcr.io/$PROJECT_ID:latest 
+        docker build -t "gcr.io/$PROJECT_ID:latest .
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
