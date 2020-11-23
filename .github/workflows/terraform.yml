@@ -1,4 +1,4 @@
-name: 'Terraform'
+name: 'Build & Deploy'
 
 on:
   push:
@@ -6,8 +6,12 @@ on:
     - develop
   pull_request:
 
+env: 
+  PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  WORKER_SA: ${{ secrets.WORKER_SA }}
+
 jobs:
-  terraform:
+  build-deploy:
     name: 'Terraform'
     runs-on: ubuntu-latest
 
@@ -18,6 +22,16 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      
+    - name: Set up gcloud Cloud SDK environment
+      uses: google-github-actions/setup-gcloud@v0.2.0
+      with:
+        # Service account key to use for authentication. This should be the JSON formatted private key which can be exported from the Cloud Console. The value can be raw or base64-encoded.
+        service_account_key: ${{ secrets.IDENTITY }}
+        
+    - name: Build
+      run: |-
+        gcloud builds submit --tag "gcr.io/$PROJECT_ID/me" --project $PROJECT_ID --impersonate-service-account=$WORKER_SA
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
