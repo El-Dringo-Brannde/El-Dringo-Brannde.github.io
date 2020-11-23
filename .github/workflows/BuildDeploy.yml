@@ -29,7 +29,7 @@ jobs:
         service_account_key: ${{ secrets.IDENTITY }}
     
     - name: impersonate
-      run: export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-service-account=$WORKER_SA)
+      run: export GOOGLE_APPLICATION_CREDENTIALS=$(gcloud auth print-access-token --impersonate-service-account=$WORKER_SA)
         
     - name: Build
       run: |
