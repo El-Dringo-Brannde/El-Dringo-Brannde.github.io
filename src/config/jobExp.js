@@ -1,12 +1,22 @@
 const jobExp = [
 	{
+		title: 'Senior Cloud Security Engineer',
+		description: `InfraDevSecops engineer in charge of making Google Cloud a first class Cloud Service provider at Nike. Such as designing automated remediations across the entire organization. Governing, updating, and managing exceptions for organization policies across all the projects.
+		\n 
+		Currently working on building out of the box secure cloud infrastructure using Terraform and service catalog. Along with doing complete end to end project automation, with security guard rails built in.
+		`,
+		company: 'Nike Inc.',
+		start: '03/01/20',
+		end: 'Present'
+	},
+	{
 		title: 'Cloud Engineer',
 		description: `Currently designing a manageable way to edit & deploy network firewall rules. Using an infrastructure as code, rules are viewable to the entire organization, and automatically deployed upon changes. 
 		\n
 		Saving the Nike network team endless man hours processing tickets for firewall exceptions, this allows engineers to submit a pull request to make the exact change they need.`,
 		company: 'Nike Inc.',
 		start: '09/04/19',
-		end: 'Present'
+		end: '03/01/20'
 	},
 	{
 		title: 'Full Stack Engineer',

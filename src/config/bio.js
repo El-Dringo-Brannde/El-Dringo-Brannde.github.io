@@ -1,23 +1,16 @@
 const bio = [
-	`My name is Brandon, I'm a recent college graduate from Oregon State
-	University, with my degree in Computer Science,
-	and a focus in Human Computer Interaction/UX design.
-	I'm a big fan of travelling on my motorcycle when I can,
-	eating all the food I can find, and tasting
-	local beers. `,
 	//background
+	`
+	My name is Brandon Dring, I'm a Senior Cloud Security Engineer, with the simple idea of making organization security transparent, easy, and seamless.
+	I'm a big fan of travelling on my motorcycle when I can,
+	eating all the food and beer I can.`,
 
-	`Currently I work at Nike Inc. Technology, in Hillsboro, Oregon. 
-	I work on the Azure Engineering team within Tech Ops, helping manage Nike's Azure infrastructure 
-	globally. Specifically, I have been working on automating how firewall changes are 
-	made throughout the enterprise. `,
 	//current
+	`Currently I work at Nike, in Beaverton, Oregon. 
+	I work on the Cloud Security team within CIS, focusing largely on Google Cloud and making it have the same security posture as the other CSPs. I like to think of my role as an infra-dev-sec ops, since I do way more than just simply security engineering.`,
 
-	`In my free time, I try to focus things outside of coding. 
-   Lately I have been teaching myself piano, reading, drawing, or 
-   Brazilian Jiu Jitsu. If the mood takes me I usually try to dabble in projects that 
-   require Machine Learning/AI or mobile development.`
 	// hobbies
+	`In my free time, I try and play with technologies that aren't apart of my daily drivers at work so to speak. I have lately built the majority of the website and app predictionstrike.com, combining sports, stocks, and technology all together.`
 ];
 
 export default bio;

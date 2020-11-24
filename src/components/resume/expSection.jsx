@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Icon, Typography } from '@material-ui/core';
 
 const ExpSection = props => (
 	<Grid container>
@@ -22,7 +22,7 @@ const ExpSection = props => (
 			<Typography variant="body2" style={{ fontSize: '1em' }}>
 				{props.start}
 			</Typography>
-			<br />-<br />
+			<Icon>arrow_downward</Icon>
 			<Typography variant="body2" style={{ fontSize: '1em' }}>
 				{props.end}
 			</Typography>

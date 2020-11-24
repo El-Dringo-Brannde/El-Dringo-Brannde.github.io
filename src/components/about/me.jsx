@@ -28,7 +28,7 @@ const AboutMe = () => (
 				<Divider style={{ margin: '5vh 15vw', width: '70vw' }} />
 			</Grid>
 			<Grid container justify="center">
-				<Grid item lg={3} style={{ margin: '25px 35px' }}>
+				<Grid item lg={3} >
 					<ScrollAnimation animateOnce animateIn="bounceInLeft">
 						<Card raised>
 							<div className="image-container-fill" />
@@ -56,7 +56,6 @@ const AboutMe = () => (
 				<Grid
 					item
 					lg={4}
-					style={{ margin: '25px 35px', maxWidth: '80vw' }}
 				>
 					<ScrollAnimation animateOnce animateIn="bounceInRight">
 						<Card raised>

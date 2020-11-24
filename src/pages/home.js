@@ -16,7 +16,7 @@ const HomePage = () => {
 				<Intro />
 			</Parallax>
 			<Parallax>
-				<AboutMe> </AboutMe>
+				<AboutMe />
 			</Parallax>
 			<Parallax>
 				<Resume />

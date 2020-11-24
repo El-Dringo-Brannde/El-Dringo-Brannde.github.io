@@ -3,7 +3,7 @@ const projects = [
 		title: 'PredictionStrike',
 		image: '/predictionstrike.png',
 		description:
-			'A sports betting website that has transacted over $300k where we see athletes like stocks and adjust their price with their in-game performance.',
+			'A sports betting website that has transacted over $2M where we see athletes like stocks and adjust their price based on their in-game performance.',
 		tech: [
 			'devicon-javascript-plain colored',
 			'devicon-nodejs-plain colored',

@@ -1,30 +1,26 @@
 const Skills = [
 	{
-		name: 'Backend Dev (Node.JS)',
+		name: 'Google Cloud (Pub/Sub, Function, Cloud Run, Firestore)',
 		rating: 4
 	},
 	{
-		name: 'Front End Dev (React, Angular(s))',
+		name: 'IaC (Terraform, ARM, CloudFormation)',
 		rating: 4
 	},
 	{
-		name: 'Python (Flask, Django, Bottle, SciPy, Numpy)',
+		name: 'Automation (Python, NodeJS)',
 		rating: 4
 	},
 	{
-		name: 'Automation',
+		name: 'Azure ( Functions, Runbooks, CosmosDB)',
 		rating: 3.5
 	},
 	{
-		name: 'AWS (EC2, Alexa, Lambda, IAM, CloudFormation, S3)',
-		rating: 3.5
+		name: 'AWS (EC2, Alexa, Lambda, IAM, S3)',
+		rating: 3
 	},
 	{
-		name: 'Azure (App service, IAM, ARM)',
-		rating: 3.5
-	},
-	{
-		name: 'DevOps',
+		name: 'DevOps (Jenkins, Azure Devops, Github Actions)',
 		rating: 3
 	}
 ];

@@ -125,7 +125,7 @@ const Foot = () => (
 		>
 			<Grid container justify="center">
 				<Grid item>
-					<div> Made with❤️ in Portland </div>
+					<div> Made with ❤️ in Beaverton, Oregon.</div>
 				</Grid>
 			</Grid>
 		</footer>

@@ -44,7 +44,7 @@ const Resume = () => (
 		<Grid container justify="center">
 			<Grid item lg={2} style={{ padding: 20 }}>
 				<ScrollAnimation animateOnce animateIn="bounceInLeft">
-					<Typography variant="display1">Experience</Typography>
+					<Typography variant="h4">Experience</Typography>
 				</ScrollAnimation>
 			</Grid>
 			<Grid item lg={8} style={{ padding: 20 }}>
@@ -74,7 +74,7 @@ const Resume = () => (
 		<Grid container justify="center">
 			<Grid item lg={2} style={{ padding: 20 }}>
 				<ScrollAnimation animateOnce animateIn="bounceInLeft">
-					<Typography variant="display1">Education</Typography>
+					<Typography variant="h4">Education</Typography>
 				</ScrollAnimation>
 			</Grid>
 			<Grid item lg={8} style={{ padding: 20 }}>

@@ -29,17 +29,17 @@ const Intro = () => (
 					style={{ color: 'white' }}
 					component="div"
 				>
-					Hi, I'm Brandon
+					Hi, I'm Brandon Dring
 					<br />
-					Coder, Beer, &amp; Coffee Drinker
-					<br />I design &amp; build..
-					<Typing speed={150}>
+					Cloud Engineer, Beer, &amp; Coffee Drinker
+					<br />I architect, build &amp; maintain:
+					<Typing speed={50}>
 						{skills.map((el, idx) => (
 							<React.Fragment key={idx}>
 								{el}
 								<Typing.Delay ms={1000} />
 								<Typing.Backspace count={el.length} />
-								<Typing.Delay ms={500} />
+								<Typing.Delay ms={250} />
 							</React.Fragment>
 						))}
 					</Typing>
