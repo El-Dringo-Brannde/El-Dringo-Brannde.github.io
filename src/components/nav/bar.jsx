@@ -1,13 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
+import {AppBar, Toolbar, IconButton, Typography, MenuItem, Menu  } from '@material-ui/core';
 import { scroller } from 'react-scroll';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 
 import { withStyles } from '@material-ui/core/styles';
 

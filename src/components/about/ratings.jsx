@@ -1,11 +1,10 @@
 import React from 'react';
 import Rating from 'react-rating';
 
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
+import { Divider, Typography } from '@material-ui/core';
 
 const SkillRating = props => (
-	<React.Fragment>
+	<>
 		<Typography variant="body2" className="center-text">
 			{' '}
 			{props.skill}
@@ -40,6 +39,6 @@ const SkillRating = props => (
 			readonly
 		/>
 		<Divider />
-	</React.Fragment>
+	</>
 );
 export default SkillRating;

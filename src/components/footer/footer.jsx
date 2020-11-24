@@ -3,7 +3,7 @@ import SkewedContainer from 'sc-react';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import {Card, Grid, Typography, Divider, Button} from '@material-ui/core';
+import { Card, Grid, Typography, Divider, Button } from '@material-ui/core';
 
 import './footer.css';
 
@@ -21,16 +21,16 @@ const Foot = () => (
 					className="center-text"
 					component="div"
 				>
-					Contact Me{' '}
-				</Typography>{' '}
+					Contact Me
+				</Typography>
 				<Divider
 					style={{
 						margin: '5vh 15vw',
 						width: '70vw'
 					}}
-				/>{' '}
-			</Grid>{' '}
-		</ScrollAnimation>{' '}
+				/>
+			</Grid>
+		</ScrollAnimation>
 		<Grid
 			container
 			justify="center"
@@ -55,8 +55,8 @@ const Foot = () => (
 					>
 						I 'd love to answer any questions you may have about my
 						availability, skills, any of the work I have done, or
-						just to get to know me better.{' '}
-					</Typography>{' '}
+						just to get to know me better.
+					</Typography>
 					<br />
 					<Typography
 						variant="body2"
@@ -67,7 +67,7 @@ const Foot = () => (
 					>
 						Please feel free to contact me through any of the
 						methods below, or take a look at some more work of mine
-						as well.{' '}
+						as well.
 					</Typography>
 					<Grid container justify="center">
 						<Button href="mailto:Brandondring31@gmail.com?Subject=Github%20Portfolio">
@@ -77,7 +77,7 @@ const Foot = () => (
 									marginRight: 5
 								}}
 							/>
-							Email{' '}
+							Email
 						</Button>
 						<Button href="https://www.linkedin.com/in/brandon-dring/">
 							<i
@@ -86,7 +86,7 @@ const Foot = () => (
 									marginRight: 5
 								}}
 							/>
-							Linked In{' '}
+							Linked In
 						</Button>
 						<Button href="https://github.com/El-Dringo-Brannde">
 							<i
@@ -99,7 +99,7 @@ const Foot = () => (
 						</Button>
 					</Grid>
 				</ScrollAnimation>
-			</Grid>{' '}
+			</Grid>
 			<Grid
 				item
 				lg={3}
@@ -114,10 +114,10 @@ const Foot = () => (
 							src={process.env.PUBLIC_URL + '/DirtbikePhoto.jpg'}
 							className="contact-photo"
 						/>
-					</Card>{' '}
-				</ScrollAnimation>{' '}
-			</Grid>{' '}
-		</Grid>{' '}
+					</Card>
+				</ScrollAnimation>
+			</Grid>
+		</Grid>
 		<footer
 			style={{
 				background: '#00B0FF'
@@ -125,10 +125,10 @@ const Foot = () => (
 		>
 			<Grid container justify="center">
 				<Grid item>
-					<div> Made with❤️ in Portland </div>{' '}
-				</Grid>{' '}
-			</Grid>{' '}
-		</footer>{' '}
+					<div> Made with❤️ in Portland </div>
+				</Grid>
+			</Grid>
+		</footer>
 	</SkewedContainer>
 );
 

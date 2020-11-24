@@ -3,9 +3,7 @@ import SkewedContainer from 'sc-react';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
+import { Grid, Typography, Divider } from '@material-ui/core';
 
 import projects from '../../config/projects';
 import PortfolioCards from './cards';

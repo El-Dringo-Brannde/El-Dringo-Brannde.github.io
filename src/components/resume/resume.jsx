@@ -6,11 +6,8 @@ import EduSection from './eduSection';
 import jobExp from '../../config/jobExp';
 import eduExp from '../../config/eduExp';
 
-import Grid from '@material-ui/core/Grid';
-import Icon from '@material-ui/core/Icon';
-import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import { Grid, Icon, Divider, Button, Typography } from '@material-ui/core';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Resume = () => (

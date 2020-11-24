@@ -7,7 +7,7 @@ import SkillRating from './ratings';
 import Skills from '../../config/skills';
 import bio from '../../config/bio';
 
-import {Card, CardContent, Grid, Divider, Typography, IconButton} from '@material-ui/core';
+import { Card, CardContent, Grid, Divider, Typography, IconButton } from '@material-ui/core';
 
 const AboutMe = () => (
 	<>
