@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "portfolio" {
   template {
     spec {
       containers {
-        image = "gcr.io/${var.project_id}/me"
+        image = "gcr.io/${var.project_id}/me:latest"
       }
       service_account_name = google_service_account.cloud_run_service_account.email
     }
@@ -22,6 +22,8 @@ resource "google_cloud_run_service" "portfolio" {
     percent         = 100
     latest_revision = true
   }
+  autogenerate_revision_name = true
+
 
   depends_on = [
     google_project_iam_member.portfolio_iam
