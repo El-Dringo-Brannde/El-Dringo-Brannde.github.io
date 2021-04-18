@@ -8,10 +8,10 @@ import HomePage from './pages/home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Portfolio = () => (
-	<React.Fragment>
+	<>
 		<NavBar />
 		<HomePage />
-	</React.Fragment>
+	</>
 );
 
 const App = () => (

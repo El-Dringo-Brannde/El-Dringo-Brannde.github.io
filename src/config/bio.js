@@ -1,9 +1,7 @@
 const bio = [
 	//background
 	`
-	My name is Brandon Dring, I'm a Senior Cloud Security Engineer, with the simple idea of making organization security transparent, easy, and seamless.
-	I'm a big fan of travelling on my motorcycle when I can,
-	eating all the food and beer I can.`,
+	My name is Brandon Dring, I'm a Senior Cloud Security Engineer, with the simple idea of pushing organizational security to the left and detecting it earlier in the development process.`,
 
 	//current
 	`Currently I work at Nike, in Beaverton, Oregon. 
