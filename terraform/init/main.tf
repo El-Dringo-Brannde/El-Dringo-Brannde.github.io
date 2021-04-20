@@ -16,5 +16,6 @@ module "service_accounts" {
     "${var.project_id}=>roles/iam.serviceAccountAdmin",
     "${var.project_id}=>roles/serviceusage.serviceUsageAdmin",
     "${var.project_id}=>roles/resourcemanager.projectIamAdmin",
+    "${var.project_id}=>roles/iam.serviceAccountUser",
   ]
 }
