@@ -23,11 +23,6 @@ resource "google_cloud_run_service" "portfolio" {
     latest_revision = true
   }
   autogenerate_revision_name = true
-
-
-  depends_on = [
-    google_project_iam_member.portfolio_iam
-  ]
 }
 
 resource "google_cloud_run_domain_mapping" "me" {
@@ -52,9 +47,6 @@ resource "google_service_account" "cloud_run_service_account" {
   account_id   = "portfolio-${random_id.suffix.hex}"
   display_name = "Portfolio account."
   description  = "Service account to use with Cloud Run personal Portfolio."
-  depends_on = [
-    google_project_service.required_service
-  ]
 }
 
 resource "google_cloud_run_service_iam_member" "allUsers" {
