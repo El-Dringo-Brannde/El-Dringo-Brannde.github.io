@@ -1,17 +1,9 @@
-variable "WORKER" {
+variable "deployer" {
   type        = string
-  description = "AUTO POPULATED VIA TF_VAR"
+  description = "Auto populated via pipeline."
+  default     = null
 }
 
 variable "project_id" {
   default = "el-dringo-brannde-io"
-}
-
-variable "required_services" {
-  default = [
-    "run.googleapis.com",
-    "cloudresourcemanager.googleapis.com",
-    "domains.googleapis.com",
-    "iam.googleapis.com"
-  ]
 }

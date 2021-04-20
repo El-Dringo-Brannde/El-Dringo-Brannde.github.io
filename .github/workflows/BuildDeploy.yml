@@ -8,7 +8,6 @@ on:
 
 env: 
   PROJECT_ID: ${{ secrets.PROJECT_ID }}
-  WORKER_SA: ${{ secrets.WORKER_SA }}
 
 jobs:
   docker:
@@ -26,7 +25,7 @@ jobs:
 
     - name: Configure Docker
       run: |
-        gcloud auth configure-docker --impersonate-service-account=$WORKER_SA
+        gcloud auth configure-docker 
         
     - name: Build
       run: |
